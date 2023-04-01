@@ -15,7 +15,7 @@ import Labform from "./Pages/P_Home/Labform";
 import Diabetes from "./Pages/P_Home/Diabetes";
 import Heart from "./Pages/P_Home/Heart";
 import Brain from "./Pages/P_Home/Brain";
-// import Calender from "./Pages/P_Home/Calender";
+import Calender from "./Pages/P_Home/Calender";
 
 
 function App() {
@@ -36,17 +36,16 @@ function App() {
         <Route path="/labo" element = {<Laboratory />} />
         {/* <Route path="/chat" element = { <Chat />} /> */}
         <Route path="/precautions" element = { <Precautions />} />
-<<<<<<< Updated upstream
         <Route path="/dashboard" element = { <Dashboard />} />
         <Route path="/labform" element = { <Labform />} />
         <Route path="/diabetes" element = { <Diabetes />} />
         <Route path="/heart" element = { <Heart />} />
         <Route path="/brain" element = { <Brain />} />
         {/* <Route path="/calender" element = { <Calender />} /> */}
-=======
+
         {/* <Route path="/dashboard" element = { <Dashboard />} /> */}
         <Route path="/calender" element = { <Calender />} />
->>>>>>> Stashed changes
+
       </Routes>
     </Router>
     
