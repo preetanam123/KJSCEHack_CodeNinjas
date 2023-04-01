@@ -25,7 +25,7 @@ function App() {
       
       <Routes>
         
-        <Route path="/" element = {<Landing />} />
+        <Route path="/" element = {<Dashboard />} />
         <Route path="/login" element = {<Login/>} />
         <Route path="/signup" element = {<SignUp />} />
         <Route path="/navbar" element = {<NavBar />}></Route>
@@ -36,12 +36,17 @@ function App() {
         <Route path="/labo" element = {<Laboratory />} />
         {/* <Route path="/chat" element = { <Chat />} /> */}
         <Route path="/precautions" element = { <Precautions />} />
+<<<<<<< Updated upstream
         <Route path="/dashboard" element = { <Dashboard />} />
         <Route path="/labform" element = { <Labform />} />
         <Route path="/diabetes" element = { <Diabetes />} />
         <Route path="/heart" element = { <Heart />} />
         <Route path="/brain" element = { <Brain />} />
         {/* <Route path="/calender" element = { <Calender />} /> */}
+=======
+        {/* <Route path="/dashboard" element = { <Dashboard />} /> */}
+        <Route path="/calender" element = { <Calender />} />
+>>>>>>> Stashed changes
       </Routes>
     </Router>
     
