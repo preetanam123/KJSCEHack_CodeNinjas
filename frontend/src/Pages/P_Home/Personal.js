@@ -109,8 +109,8 @@ export default function Personal() {
                                     <span className="flex gap-6 ml-8">
                                         <input type="radio" id="html" name="gender" value="Male" onChange={handleChangeG}/>
                                         <label for="gender">Male</label>
-                                        <input type="gender" id="css" name="gender" value="Female"onChange={handleChangeG} />
-                                        <label for="css">Female</label>
+                                        <input type="radio" id="css" name="gender" value="Female"onChange={handleChangeG} />
+                                        <label for="gender">Female</label>
                                         <input type="radio" id="javascript" name="gender" value="Other"onChange={handleChangeG} />
                                         <label for="gender">Other</label>
                                     </span>
