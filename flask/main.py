@@ -5,6 +5,8 @@ import pandas as pd
 import predict
 import pickle
 import numpy as np
+from io import BytesIO
+import ocr
 
 lin_model = pickle.load(open('model1.pkl','rb'))
 log_model = pickle.load(open('model2.pkl','rb'))
@@ -39,6 +41,16 @@ def rec():
     ans = predict.classify(log_model.predict(arr2))
     print(log_model.predict(arr2))
     return ans
+
+
+@app.route('/upload', methods=['POST'])
+def upload():
+    file = request.files['file_from_react']
+    filename = file.filename
+    output = ocr.report(filename)
+    return output
+
+
 
 if __name__=='__main__':
     app.run(port = 8000, debug = True)

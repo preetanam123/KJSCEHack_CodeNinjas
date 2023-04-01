@@ -4,8 +4,9 @@ import Sidebar from "./Sidebar";
 import doc1 from "../../assets/doc1.jpg";
 import doc2 from "../../assets/doc2.jpeg";
 import doc3 from "../../assets/doc3.png";
-
 import Card from "../../components/Card";
+
+// import Card from "../../components/Card";
 
 export default function Billing() {
     const [showModal, setShowModal] = useState(false);

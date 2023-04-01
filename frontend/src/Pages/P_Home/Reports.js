@@ -3,12 +3,39 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import { useState } from "react";
 import m_r from "../../assets/medical_report.png";
+import axios from 'axios';
 // import { Document, Page } from 'react-pdf';
 // import pdf from '../../Book1.pdf'
 
 
 export default function Reports() {
     const [viewPdf, setViewPdf] = useState(false);
+    const [pdfData, setpdfData] = useState(false);
+    const url = 'http://localhost:8000/upload';
+    let file;
+    const sendPdf = (e) => {
+        file = e.target.files[0];
+    }
+
+    const handleSubmit = async (e) =>{
+        e.preventDefault();
+        try {
+            // const file = e.target.files[0];
+            if (file != null) {
+                const data = new FormData();
+                data.append('file_from_react', file);
+                const response = await axios.post(`${url}`, data);
+                console.log(response);
+                setpdfData(response.data);
+        }
+       
+    }
+    catch (e) {
+        alert("Error uploading file")
+        console.log(e);
+    }
+}
+
 
     const handleView =() =>{
         setViewPdf(true);
@@ -27,12 +54,12 @@ export default function Reports() {
                             <h1>Please Upload your Blood Reports </h1>
                         </div>
                         <div className="font-medium text-[#000000] text-xl">
-                            <input type="file" name="file" />
+                            <input type="file" name="file" onChange={sendPdf}/>
                         </div>
                         <div>
                             <button type="submit" className="my-10 mr-5 h-10 px-5 text-indigo-100 bg-indigo-700
                             rounded-lg transition-colors duration-150 drop-shadow-md hover:drop-shadow-lg hover:bg-indigo-800" 
-                            onClick={() => alert("Pdf submitted")}>
+                            onClick={handleSubmit}>
                                 Submit
                             </button>
                             <button type="button" className="my-10 ml-5 h-10 px-5 text-indigo-100 bg-indigo-700
@@ -42,13 +69,7 @@ export default function Reports() {
                             </button>
                             { 
                                 viewPdf ?<div>
-                                <h1>Hemoglobin : 10.8</h1>
-                                <br />
-                                <h1>RBC        : 3.3 </h1>
-                                <br/>
-                                <h1>Platelet   : 105 </h1>
-                                <br/>
-                                <h1>Lymphocytes        : 21.23</h1>
+                                {pdfData}
                                 </div> : <div>
 
                                 </div> 
