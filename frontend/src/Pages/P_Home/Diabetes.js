@@ -77,7 +77,7 @@ export default function Diabetes() {
                 <div className="container mx-auto mt-12">
                             <form className="grid grid-cols-1 gap-6 mb-6 mx-3" onSubmit={handleSubmit}>
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex mr-5">
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Glucose: </label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Glucose: </label>
                                     <input
                                         type="number"
                                         name="glucose"
@@ -89,7 +89,8 @@ export default function Diabetes() {
                                 </div>
 
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex mr-5">
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Blood Pressure: </label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Blood Pressure</label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl mt-6 flex ml-[-11px]">:</label>
                                     <input
                                         type="number"
                                         name="bp"
@@ -101,7 +102,8 @@ export default function Diabetes() {
                                 </div>
 
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex mr-5">
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Skin Thickness: </label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Skin Thickness</label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl mt-6 flex ml-[-11px]">:</label>
                                     <input
                                         type="number"
                                         name="st"
@@ -113,7 +115,7 @@ export default function Diabetes() {
                                 </div>
 
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex mr-5">
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Insulin: </label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Insulin: </label>
                                     <input
                                         type="number"
                                         name="insulin"
@@ -125,11 +127,11 @@ export default function Diabetes() {
                                 </div>     
 
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex mr-5">
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">BMI: </label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">BMI: </label>
                                     <input
                                         type="number"
                                         name="insulin"
-                                        className="w-full block px-16 py-2 mt-2 ml-16 border-gray-500 border-2 rounded-md shadow-sm focus:border-indigo-300 focus:ring
+                                        className="w-full block px-16 py-2 mt-2 ml-20 border-gray-500 border-2 rounded-md shadow-sm focus:border-indigo-300 focus:ring
                                     focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700"
                                         placeholder=""
                                         onChange={handleChangeM}
@@ -137,12 +139,12 @@ export default function Diabetes() {
                                 </div>
 
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex mr-5">
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Diabetes<br />Pedigree<br />Function </label>
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl mt-4 flex">:</label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Diabetes<br />Pedigree<br />Function </label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl mt-12 flex">:</label>
                                     <input
                                         type="number"
                                         name="insulin"
-                                        className="w-full block px-16 py-2 mt-2 ml-4 border-gray-500 border-2 rounded-md shadow-sm focus:border-indigo-300 focus:ring
+                                        className="w-full block px-16 py-2 mt-2 ml-6 border-gray-500 border-2 rounded-md shadow-sm focus:border-indigo-300 focus:ring
                                     focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700"
                                         placeholder=""
                                         onChange={handleChangeD}

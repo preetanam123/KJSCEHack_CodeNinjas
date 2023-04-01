@@ -9,9 +9,7 @@ svc_model = pickle.load(open('model3.pkl','rb'))
 def classify(num):
     if num < 0.5:
         return 'Dengue'
-    
     elif num < 1.5:
         return 'Typhoid'
-    
     else :
         return 'Anemia'
