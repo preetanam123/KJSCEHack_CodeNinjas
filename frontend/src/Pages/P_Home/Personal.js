@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 
 export default function Personal() {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const [gender, setGender] = useState('');
     const [name, setName] = useState('');
@@ -177,6 +177,7 @@ export default function Personal() {
                                         placeholder=""
                                         onChange={handleChangeH}
                                         value={height}/>
+                                    <label className=" mr-2 font-semibold text-[#000000] text-xl ml-3 mt-4 flex">cm</label>
                                 </div>
 
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex">
@@ -189,6 +190,7 @@ export default function Personal() {
                                         placeholder=""
                                         onChange={handleChangeW}
                                         value={weight}/>
+                                    <label className=" mr-2 font-semibold text-[#000000] text-xl ml-3 mt-4 flex">kg</label>
                                 </div>
 
                                 <div className="flex ml-16">

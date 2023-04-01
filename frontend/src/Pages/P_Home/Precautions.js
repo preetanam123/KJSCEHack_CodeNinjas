@@ -41,32 +41,31 @@ export default function Precautions() {
         <div>
           <Sidebar />
         </div>
-        <div className="flex justify-center mx-52 mt-30 px-16 py-16 text-[#090E40] w-3/4 h-5/6 rounded-xl bg-gradient-to-r from-indigo-400">
-        <div className="m-auto">
-          <label className="text-center m-10 font-bold text-[#000000] text-xl">
-            Enter the Disease you were diagnosed with:{" "}
-          </label>
-          <input
-            type="text"
-            className="border-gray-500 border-2 rounded-md m-10  "
-            onChange={handleChange}
-          />
-          <button
-            onClick={handleClick}
-            className=" h-10 px-5 text-indigo-100 bg-indigo-700 rounded-lg transition-colors duration-150 focus:shadow-outline hover:bg-indigo-800"
-          >
-            Submit
-          </button>
-          <div className="m-10 font-bold text-[#000000] text-xl">
-            Description:
-            <br />
-            {description}
-          </div>
-          <div className="m-10 font-bold text-[#000000] text-xl">
-            Precautions:
-            <br />
-            {precaution}
-          </div>
+        <div className="flex justify-center mx-52 px-16 py-16 text-[#090E40] w-3/4 h-5/6 rounded-xl bg-gradient-to-r from-indigo-400">
+          <div className="m-auto">
+            <label className="text-center m-10 font-bold text-[#000000] text-xl">
+              Enter the Disease you were diagnosed with:{" "}
+            </label>
+            <input
+              type="text"
+              className="border-gray-500 border-2 rounded-md m-10  "
+              onChange={handleChange}
+            />
+            <button
+              onClick={handleClick}
+              className=" h-10 px-5 text-indigo-100 bg-indigo-700 rounded-lg transition-colors duration-150 focus:shadow-outline hover:bg-indigo-800">
+              Submit
+            </button>
+            <div className="m-10 font-bold text-[#000000] text-xl">
+              Description:
+              <br />
+              {description}
+            </div>
+            <div className="m-10 font-bold text-[#000000] text-xl">
+              Precautions:
+              <br />
+              {precaution}
+            </div>
           </div>
         </div>
       </div>

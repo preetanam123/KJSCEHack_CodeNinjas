@@ -10,6 +10,8 @@ import Reports from "./Pages/P_Home/Reports";
 // import Chat from "./components/Chat";
 import Laboratory from "./Pages/P_Home/Laboratory";
 import Precautions from "./Pages/P_Home/Precautions";
+import Dashboard from "./Pages/Dashboard/Dashboard";
+import Calender from "./Pages/P_Home/Calender";
 
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
         <Route path="/labo" element = {<Laboratory />} />
         {/* <Route path="/chat" element = { <Chat />} /> */}
         <Route path="/precautions" element = { <Precautions />} />
+        <Route path="/dashboard" element = { <Dashboard />} />
+        <Route path="/calender" element = { <Calender />} />
       </Routes>
     </Router>
     
