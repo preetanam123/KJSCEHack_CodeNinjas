@@ -60,7 +60,7 @@ export default function NavBar() {
                                 <a href="javascript:void(0)">Home</a>
                             </li>
                             <li className="text-indigo-800 hover:text-blue-600 font-medium text-xl">
-                                <a href="javascript:void(0)">Log Out</a>
+                                <a href="/signup">Log Out</a>
                             </li>
                             
                         </ul>
