@@ -16,7 +16,7 @@ export default function Sidebar() {
                             <ul className="pt-2 pb-4 space-y-1 text-sm">
                                 <li className="rounded-sm">
                                     <a
-                                        href="#1"
+                                        href="/personal"
                                         className="flex items-center p-2 space-x-1 rounded-md"
                                     >
                                         <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +29,7 @@ export default function Sidebar() {
                                 </li>
                                 <li className="rounded-sm">
                                     <a
-                                        href="#2"
+                                        href="/reports"
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
                                         <svg width="24px" height="24px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M914.3 292.6H768V109.7H256v182.9H109.7v438.9H256v182.9h512v-183h146.3V292.6zM329.2 182.9h365.7v109.7H329.2V182.9z m365.7 658.2H329.2V548.6h365.7v292.5z m146.3-182.8H768V475.4H256v182.9h-73.1V365.7H841.2v292.6z" fill="#0F1F3C" /><path d="M402.3 621.7h219.4v73.1H402.3zM402.3 731.4h219.4v73.1H402.3z" fill="#0F1F3C" /></svg>
@@ -53,7 +53,7 @@ export default function Sidebar() {
                                 </li> */}
                                 <li className="rounded-sm">
                                     <a
-                                        href="#4"
+                                        href="labo"
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
                                         <svg fill="#000000" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
@@ -85,7 +85,7 @@ export default function Sidebar() {
                                 </li>
                                 <li className="rounded-sm">
                                     <a
-                                        href="#5"
+                                        href="appointment"
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
                                         <svg fill="#000000" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
@@ -136,7 +136,7 @@ export default function Sidebar() {
                                 </li>
                                 <li className="rounded-sm">
                                     <a
-                                        href="#7"
+                                        href="precautions"
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
                                         <svg fill="#000000" width="24px" height="24px" viewBox="-3.5 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M11.16 16.153a.477.477 0 0 1-.476.475H1.316a.477.477 0 0 1-.475-.475V3.046a.477.477 0 0 1 .475-.475h6.95l2.893 2.893zm-1.11-9.924H8.059a.575.575 0 0 1-.574-.574V3.679H1.95v11.84h8.102zM3.907 4.92a1.03 1.03 0 1 0 1.029 1.03 1.03 1.03 0 0 0-1.03-1.03zm4.958 3.253h-5.87v1.108h5.87zm0 2.354h-5.87v1.109h5.87zm0 2.354h-5.87v1.109h5.87z"/></svg>
