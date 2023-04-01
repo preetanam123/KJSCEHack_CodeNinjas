@@ -33,7 +33,7 @@ function App() {
         <Route path="/chat" element = { <Chat />} />
         <Route path="/precautions" element = { <Precautions />} />
         <Route path="/dashboard" element = { <Dashboard />} />
-        <Route path="/calendar" element = { <Calendar />} />
+        <Route path="/calender" element = { <Calender />} />
       </Routes>
     </Router>
     

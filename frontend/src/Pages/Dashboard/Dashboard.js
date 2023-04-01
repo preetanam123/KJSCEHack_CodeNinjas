@@ -6,6 +6,7 @@ import blood from "../../assets/bloodDrop.svg";
 import height from "../../assets/height.svg";
 import weight from "../../assets/weightScale.svg";
 import plus from "../../assets/plusSign.svg";
+import Calendar from "../P_Home/Calender";
 // import Chat from '../../components/Chat';
 
 export default function Reports() {
@@ -17,9 +18,9 @@ export default function Reports() {
                 <Sidebar />
 
                 <div className="flex w-full">
-                    <div className="w-full">
-                        <div className=" mx-20 mt-10 px-16 py-10 text-[#090E40] h-40 rounded-xl bg-indigo-500 bg-opacity-50">
-                            <div className=" h-56">
+                    <div className="w-full ">
+                        <div className=" mx-2 mt-3 px-16 py-10 text-[#090E40] h-40 rounded-xl bg-indigo-500 bg-opacity-50">
+                            <div className="h-56">
                                 <div className="w-full">
                                     <p className="font-bold text-4xl font-serif">Hello, Sheldon Cooper</p>
                                     <p className="font-medium text-gray-600 pt-4">Have a nice day and don't forget to take care of your health!</p>
@@ -28,7 +29,7 @@ export default function Reports() {
 
                         </div>
 
-                        <div className="mx-20 mt-3 py-10 flex">
+                        <div className="mx-2 mt-3 pt-10 flex">
                             <div className="flex rounded-xl h-36 w-80 hover:shadow-lg bg-gradient-to-r from-indigo-500 to-fuchsia-500">
                                 <p className="font-serif font-medium py-10 px-10 text-left text-xl text-slate-50">
                                     Make a clinic <br /> appointment
@@ -39,11 +40,15 @@ export default function Reports() {
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                            
-                        <div>
+                            <div>
 
+                                <Calendar />
+                            </div>
                         </div>
+
+                        {/* <div className="">
+                            <Calendar />
+                        </div> */}
                     </div>    
 
                     <div className="">
