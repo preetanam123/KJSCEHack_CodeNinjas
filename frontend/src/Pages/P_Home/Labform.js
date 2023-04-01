@@ -34,7 +34,7 @@ const SideBar = () => {
 const SideBarIcon = ({ icon, text = 'form' }) => (
   <div className="sidebar-icon group">
     {icon}
-    <span class="sidebar-tooltip group-hover:scale-100">
+    <span class="sidebar-tooltip group-hover:scale-100 font-serif">
       {text}
     </span>
   </div>
