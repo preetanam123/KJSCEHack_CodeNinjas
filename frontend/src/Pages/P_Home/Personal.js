@@ -13,10 +13,12 @@ export default function Personal() {
     const [age, setAge] = useState(0);
     const [address, setAddress] = useState('');
     const [bloodGroup, setBloodGroup] = useState('');
+    const [height, setHeight] = useState(0);
+    const [weight, setWeight] = useState(0);
 
-    // const handleChangeG = (e) => {
-    //     setGender(e.value);
-    // }
+    const handleChangeG = (e) => {
+        setGender(e.value);
+    }
     const url = 'http://localhost:5000/api/personal';
 
     const handleChangeN = (e) => {
@@ -32,12 +34,20 @@ export default function Personal() {
     const handleChangeB = (e) => {
         setBloodGroup(e.target.value);
     }
+    const handleChangeH = (e) => {
+        setHeight(e.target.value);
+    }
+    const handleChangeW = (e) => {
+        setWeight(e.target.value);
+    }
     // setGender('Male');
     console.log(gender);
     console.log(name);
     console.log(age);
     console.log(address);
     console.log(bloodGroup);
+    console.log(height);
+    console.log(weight);
     
     const handleSubmit = async (e) => {
         e.preventDefault(); 
@@ -46,7 +56,9 @@ export default function Personal() {
                 name,
                 age,
                 address,
-                bloodGroup
+                bloodGroup,
+                height,
+                weight
             });
             console.log(response.data);
             if(response.data){
@@ -54,10 +66,13 @@ export default function Personal() {
             }
         } catch (error) {
             console.log(error.response);
+            setGender("");
             setName("");
             setAge("");
             setAddress("");
             setBloodGroup("");
+            setHeight("");
+            setWeight(""); 
             alert("Error occured while logging in");
             
         }
@@ -150,6 +165,30 @@ export default function Personal() {
                                             <option value="AB+">AB+</option>
                                             <option value="AB-">AB-</option>
                                         </select>
+                                </div>
+
+                                <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex">
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Height: </label>
+                                    <input
+                                        type="number"
+                                        name="height"
+                                        className="w-full block px-16 py-2 mt-2 border-gray-500 border-2 rounded-md shadow-sm focus:border-indigo-300 focus:ring
+                                    focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700"
+                                        placeholder=""
+                                        onChange={handleChangeH}
+                                        value={height}/>
+                                </div>
+
+                                <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex">
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Weight: </label>
+                                    <input
+                                        type="number"
+                                        name="weight"
+                                        className="w-full block px-16 py-2 mt-2 border-gray-500 border-2 rounded-md shadow-sm focus:border-indigo-300 focus:ring
+                                    focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700"
+                                        placeholder=""
+                                        onChange={handleChangeW}
+                                        value={weight}/>
                                 </div>
 
                                 <div className="flex ml-16">
