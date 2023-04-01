@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import image from "../../assets/image.jpeg";
-import Chat from '../../components/Chat'
+// import Chat from '../../components/Chat'
 // import '../../App.css'
 
 const Landing = () => {
@@ -31,7 +31,7 @@ const Landing = () => {
 
       </div>
         
-        <Chat />
+        {/* <Chat /> */}
     </div>
   )
 }

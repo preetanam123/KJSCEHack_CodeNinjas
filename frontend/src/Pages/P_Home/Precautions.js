@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavBar from "./Navbar";
 import Sidebar from "./Sidebar";
-import Chat from "../../components/Chat";
+// import Chat from "../../components/Chat";
 
 export default function Precautions() {
   const [disease, setDisease] = useState("");
@@ -70,7 +70,7 @@ export default function Precautions() {
           </div>
         </div>
       </div>
-      <Chat />
+      {/* <Chat /> */}
     </div>
   );
 }

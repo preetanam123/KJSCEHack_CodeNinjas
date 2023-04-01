@@ -7,7 +7,7 @@ import Sidebar from "./Pages/P_Home/Sidebar";
 import Personal from "./Pages/P_Home/Personal";
 import Appointment from "./Pages/P_Home/Appointment";
 import Reports from "./Pages/P_Home/Reports";
-import Chat from "./components/Chat";
+// import Chat from "./components/Chat";
 import Laboratory from "./Pages/P_Home/Laboratory";
 import Precautions from "./Pages/P_Home/Precautions";
 
@@ -28,7 +28,7 @@ function App() {
         <Route path="/appointment" element = {<Appointment />}></Route>
         <Route path="/reports" element = {<Reports />}></Route>
         <Route path="/labo" element = {<Laboratory />} />
-        <Route path="/chat" element = { <Chat />} />
+        {/* <Route path="/chat" element = { <Chat />} /> */}
         <Route path="/precautions" element = { <Precautions />} />
       </Routes>
     </Router>
