@@ -4,11 +4,11 @@ import Navbar from "./Navbar";
 // import Sidebar from "./Sidebar";
 import Labform from "./Labform";
 import axios from 'axios';
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 export default function Laborartory() {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const [value1,setValue1] = useState(20);
     const [value2,setValue2] = useState(0);

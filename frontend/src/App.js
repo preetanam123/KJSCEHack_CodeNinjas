@@ -42,9 +42,7 @@ function App() {
         <Route path="/heart" element = { <Heart />} />
         <Route path="/brain" element = { <Brain />} />
         {/* <Route path="/calender" element = { <Calender />} /> */}
-
-        {/* <Route path="/dashboard" element = { <Dashboard />} /> */}
-        <Route path="/calender" element = { <Calender />} />
+        <Route path="/dashboard" element = { <Dashboard />} />
 
       </Routes>
     </Router>
