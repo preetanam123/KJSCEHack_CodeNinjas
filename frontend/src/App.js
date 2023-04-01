@@ -11,7 +11,11 @@ import Chat from "./components/Chat";
 import Laboratory from "./Pages/P_Home/Laboratory";
 import Precautions from "./Pages/P_Home/Precautions";
 import Dashboard from "./Pages/Dashboard/Dashboard";
-import Calender from "./Pages/P_Home/Calender";
+import Labform from "./Pages/P_Home/Labform";
+import Diabetes from "./Pages/P_Home/Diabetes";
+import Heart from "./Pages/P_Home/Heart";
+import Brain from "./Pages/P_Home/Brain";
+// import Calender from "./Pages/P_Home/Calender";
 
 
 function App() {
@@ -33,7 +37,11 @@ function App() {
         <Route path="/chat" element = { <Chat />} />
         <Route path="/precautions" element = { <Precautions />} />
         <Route path="/dashboard" element = { <Dashboard />} />
-        <Route path="/calender" element = { <Calender />} />
+        <Route path="/labform" element = { <Labform />} />
+        <Route path="/diabetes" element = { <Diabetes />} />
+        <Route path="/heart" element = { <Heart />} />
+        <Route path="/brain" element = { <Brain />} />
+        {/* <Route path="/calender" element = { <Calender />} /> */}
       </Routes>
     </Router>
     

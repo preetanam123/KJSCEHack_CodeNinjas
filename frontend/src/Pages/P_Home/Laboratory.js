@@ -1,7 +1,8 @@
 import React from "react";
 import {useState } from "react";
 import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
+// import Sidebar from "./Sidebar";
+import Labform from "./Labform";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
@@ -61,7 +62,8 @@ export default function Laborartory() {
         <div>
             <Navbar />
             <div className="flex">
-                <Sidebar />
+                {/* <Sidebar /> */}
+                <Labform />
 
                 <div className="container mx-auto mt-12">
                         <form className="grid grid-cols-1 gap-6 mb-6 mx-3" onSubmit={handleSubmit}>
