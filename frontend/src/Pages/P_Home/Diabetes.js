@@ -89,7 +89,8 @@ export default function Diabetes() {
                                 </div>
 
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex mr-5">
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Blood Pressure: </label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Blood Pressure</label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl mt-6 flex ml-[-11px]">:</label>
                                     <input
                                         type="number"
                                         name="bp"
@@ -101,7 +102,8 @@ export default function Diabetes() {
                                 </div>
 
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex mr-5">
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Skin Thickness: </label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Skin Thickness</label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl mt-6 flex ml-[-11px]">:</label>
                                     <input
                                         type="number"
                                         name="st"
@@ -138,7 +140,7 @@ export default function Diabetes() {
 
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex mr-5">
                                     <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Diabetes<br />Pedigree<br />Function </label>
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl mt-4 flex">:</label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl mt-12 flex">:</label>
                                     <input
                                         type="number"
                                         name="insulin"
