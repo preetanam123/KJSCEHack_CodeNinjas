@@ -6,7 +6,7 @@ import predict
 import pickle
 import numpy as np
 from io import BytesIO
-import ocr
+import ocr4
 
 lin_model = pickle.load(open('model1.pkl','rb'))
 log_model = pickle.load(open('model2.pkl','rb'))
@@ -47,7 +47,7 @@ def rec():
 def upload():
     file = request.files['file_from_react']
     filename = file.filename
-    output = ocr.report(filename)
+    output = ocr4.report(filename)
     return output
 
 

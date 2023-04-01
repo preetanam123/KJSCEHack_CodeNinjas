@@ -17,11 +17,12 @@ export default function Reports() {
             <div className="flex">
                 <Sidebar />
 
-                <div className="flex w-full">
-                    <div className="w-full ">
-                        <div className=" mx-2 mt-3 px-16 py-10 text-[#090E40] h-40 rounded-xl bg-indigo-500 bg-opacity-50">
+                <div className="flex w-full justify-between">
+                    <div className="grid grid-cols-3 gap-4">
+                    <div className="w-100 col-span-2">
+                        <div className="mx-2 mt-3 px-16 py-10 text-[#090E40] h-40 rounded-xl bg-indigo-500 bg-opacity-50">
                             <div className="h-56">
-                                <div className="w-full">
+                                <div className="w-100">
                                     <p className="font-bold text-4xl font-serif">Hello, Sheldon Cooper</p>
                                     <p className="font-medium text-gray-600 pt-4">Have a nice day and don't forget to take care of your health!</p>
                                 </div>                                                    
@@ -58,7 +59,7 @@ export default function Reports() {
                                     <div className="p-10 border-blue-200 border-spacing-2 ">
                                         <div className=" items-center p-5 border-blue-200 border-2 rounded-xl">
                                             <div className="mx-auto w-24 h-24 border-2 rounded-xl bg-blue-50">
-                                                <img src={profile} alt="" srcset="" />
+                                                <img src={profile} alt=""  />
                                             </div>
                                             <div className="">
                                                 <h2 className="text-xl font-bold text-center mt-4 font-serif text-indigo-50">Sheldon Cooper</h2>
@@ -90,6 +91,7 @@ export default function Reports() {
                                 </div>
                             </div>        
                         </div>
+                    </div>
                     </div>
                 </div>
 
