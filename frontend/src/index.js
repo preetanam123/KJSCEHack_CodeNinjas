@@ -2,8 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Kommunicate from '@kommunicate/kommunicate-chatbot-plugin';
+
 // import reportWebVitals from './reportWebVitals';
 
+
+Kommunicate.init("1f2cf66df7575c11e9a286ce3d08cfab4")
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

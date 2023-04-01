@@ -16,7 +16,7 @@ import Diabetes from "./Pages/P_Home/Diabetes";
 import Heart from "./Pages/P_Home/Heart";
 import Brain from "./Pages/P_Home/Brain";
 // import Calender from "./Pages/P_Home/Calender";
-
+// import Chat from "./components/Chat";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
       
       <Routes>
         
-        <Route path="/" element = {<Landing />} />
+        <Route path="/" element = {<Dashboard />} />
         <Route path="/login" element = {<Login/>} />
         <Route path="/signup" element = {<SignUp />} />
         <Route path="/navbar" element = {<NavBar />}></Route>

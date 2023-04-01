@@ -8,7 +8,7 @@ import weight from "../../assets/weightScale.svg";
 import plus from "../../assets/plusSign.svg";
 import Calendar from "../P_Home/Calender";
 // import Chat from '../../components/Chat';
-
+import Chat from "../../components/Chat";
 export default function Reports() {
     return(
         <div>
@@ -95,7 +95,7 @@ export default function Reports() {
 
 
             </div>
-            {/* <Chat /> */}
+             {/* <Chat />  */}
         </div>    
 
     );
