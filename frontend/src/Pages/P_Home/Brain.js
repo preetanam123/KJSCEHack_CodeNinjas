@@ -123,14 +123,22 @@ export default function BrainStroke() {
                                     <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Current<br />Smoking<br />Status </label>
                                     <label className=" mr-2 font-bold text-[#000000] text-xl mt-12 flex">:</label>
                                     <span className="flex gap-6 ml-10 mt-4">
-                                        <input type="radio" id="cs" name="css" value="3" onChange={handleChangeHd}/>
+                                        <input type="radio" id="cs" name="css" value={smoking} onChange={handleChangeHd}/>
                                         <label for="smoking" className=" mr-2 font-semibold text-[#000000] text-xl mt-6 flex">Currently Smoking</label>
-                                        <input type="radio" id="uts" name="css" value="1"onChange={handleChangeHd} />
+                                        <input type="radio" id="uts" name="css" value={smoking} onChange={handleChangeHd} />
                                         <label for="smoking" className=" mr-2 font-semibold text-[#000000] text-xl mt-6 flex">Used to Smoke</label>
-                                        <input type="radio" id="ns" name="css" value ="2"  onChange={handleChangeHd}/>
+                                        <input type="radio" id="ns" name="css" value ={smoking}  onChange={handleChangeHd}/>
                                         <label for="smoking" className=" mr-2 font-semibold text-[#000000] text-xl mt-6 flex">Never Smoke</label>
                                     </span>
-                                </div>                           
+                                </div>       
+                                <div className="flex ml-16">
+                                    <div className="ml-6 ">
+                                        <button onClick = {handleSubmit} type="submit" className=" h-10 px-5 text-indigo-100 bg-indigo-700
+                                            rounded-lg transition-colors duration-150 focus:shadow-outline hover:bg-indigo-800">
+                                            Submit
+                                        </button>
+                                    </div>
+                            </div>                    
                             </form>
                 </div>
             </div>

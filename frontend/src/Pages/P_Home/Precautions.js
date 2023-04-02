@@ -7,6 +7,7 @@ export default function Precautions() {
   const [disease, setDisease] = useState("");
   const [description, setDescription] = useState("");
   const [precaution, setPrecaution] = useState([]);
+  const [medicine, setMedicine] = useState("");
 
   const handleChange = (e) => {
     setDisease(e.target.value);

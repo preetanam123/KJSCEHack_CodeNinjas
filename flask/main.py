@@ -93,12 +93,10 @@ def brain():
     jsonData = request.get_json()
     l=[]
     l.append(jsonData['hypert'])
-    l.append(jsonData['value2'])
-    l.append(jsonData['value3'])
-    l.append(jsonData['value4'])
-    l.append(jsonData['value5'])
-    l.append(jsonData['value6'])
-
+    l.append(jsonData['hd'])
+    l.append(jsonData['agl'])
+    l.append(jsonData['bmi'])
+    l.append(jsonData['smoking'])
     arr = np.array(l, dtype = float)
     print(arr)
 
