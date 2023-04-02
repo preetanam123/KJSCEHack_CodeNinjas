@@ -9,7 +9,7 @@ def report(filename):
     l=[]
     for i in range(len(ans)):
         if(ans[i:i+22] == 'Resting Blood Pressure'):
-            print(ans[i:i+26])
+            print(ans[i:i+28])
             l.append(ans[i:i+25])
         if(ans[i:i+19] == 'Fasting Blood Sugar'):
             print(ans[i:i+20])
