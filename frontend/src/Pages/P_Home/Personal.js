@@ -88,42 +88,42 @@ export default function Personal() {
                         <form className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6 mx-3" onSubmit = {handleSubmit}>
             
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow">
-                                    <div className="font-bold text-[#000000] text-xl ml-20 mt-4 flex " >
+                                    <div className="font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif" >
                                         Salutation:
                                     <span className="flex gap-6 ml-8">
                                         <input type="radio" id="html" name="fav_language" value="HTML" />
-                                        <label for="html">Mr.</label>
+                                        <label for="html" className="text-lg">Mr.</label>
                                         <input type="radio" id="css" name="fav_language" value="CSS" />
-                                        <label for="css">Mrs.</label>
+                                        <label for="css" className="text-lg">Mrs.</label>
                                         <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
-                                        <label for="javascript">Master</label>
+                                        <label for="javascript" className="text-lg">Master</label>
                                         <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
-                                        <label for="javascript">Miss</label>
+                                        <label for="javascript" className="text-lg">Miss</label>
                                     </span>
                                     </div>
                                 </div>
 
-                                <div className="w-full px-2 py-2 bg-white rounded-lg shadow">
-                                    <div className="font-bold text-[#000000] text-xl ml-20 mt-4 flex" >
+                                <div className="w-full px-2 py-2 bg-white rounded-lg shadow font-serif">
+                                    <div className="font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif" >
                                         Gender:
-                                    <span className="flex gap-6 ml-8">
+                                    <span className="flex gap-6 ml-8 font-serif">
                                         <input type="radio" id="html" name="gender" value="Male" onChange={handleChangeG}/>
-                                        <label for="gender">Male</label>
+                                        <label for="gender" className="text-lg">Male</label>
                                         <input type="radio" id="css" name="gender" value="Female"onChange={handleChangeG} />
-                                        <label for="gender">Female</label>
+                                        <label for="gender" className="text-lg">Female</label>
                                         <input type="radio" id="javascript" name="gender" value="Other"onChange={handleChangeG} />
-                                        <label for="gender">Other</label>
+                                        <label for="gender" className="text-lg">Other</label>
                                     </span>
                                     </div>
                                 </div>
 
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex">
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Name: </label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Name: </label>
                                     <input
                                         type="text"
                                         name="name"
                                         className="w-full block px-16 py-2 mt-2 border-gray-500 border-2 rounded-md shadow-sm focus:border-indigo-300 focus:ring
-                                    focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700"
+                                    focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700 font-serif"
                                         placeholder="John Doe"
                                         onChange={handleChangeN}
                                         value={name}/>
@@ -135,26 +135,26 @@ export default function Personal() {
                                         type="number"
                                         name="age"
                                         className="w-full block px-16 py-2 mt-2 border-gray-500 border-2 rounded-md shadow-sm focus:border-indigo-300 focus:ring
-                                    focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700"
+                                    focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700 font-serif"
                                         placeholder=""
                                         onChange={handleChangeA}
                                         value={age}/>
                                 </div>
 
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex">
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Address: </label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Address: </label>
                                     <textarea rows="4" cols="50"
                                         type="text"
                                         name="address"
                                         className="w-full block px-16 py-2 mt-2 border-gray-500 border-2 rounded-md shadow-sm focus:border-indigo-300 focus:ring
-                                    focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700"
+                                    focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700 font-serif"
                                         placeholder=""
                                         onChange={handleChangeAd}
                                         value={address}/>
                                 </div>
 
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex h-[57%]">
-                                    <label className=" mr-8 font-bold text-[#000000] text-xl ml-20 mt-4">Blood Group: </label>
+                                    <label className=" mr-8 font-bold text-[#000000] text-xl ml-20 mt-4 font-serif">Blood Group: </label>
                                         <select name="bloodgroup" onChange={handleChangeB} value={bloodGroup}>
                                             <option value="A+">A+</option>
                                             <option value="A-">A-</option>    
@@ -168,35 +168,35 @@ export default function Personal() {
                                 </div>
 
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex">
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Height: </label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Height: </label>
                                     <input
                                         type="number"
                                         name="height"
                                         className="w-full block px-16 py-2 mt-2 border-gray-500 border-2 rounded-md shadow-sm focus:border-indigo-300 focus:ring
-                                    focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700"
+                                    focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700 font-serif"
                                         placeholder=""
                                         onChange={handleChangeH}
                                         value={height}/>
-                                    <label className=" mr-2 font-semibold text-[#000000] text-xl ml-3 mt-4 flex">cm</label>
+                                    <label className=" mr-2 font-semibold text-[#000000] text-xl ml-3 mt-4 flex font-serif">cm</label>
                                 </div>
 
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex">
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex">Weight: </label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Weight: </label>
                                     <input
                                         type="number"
                                         name="weight"
                                         className="w-full block px-16 py-2 mt-2 border-gray-500 border-2 rounded-md shadow-sm focus:border-indigo-300 focus:ring
-                                    focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700"
+                                    focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700 font-serif"
                                         placeholder=""
                                         onChange={handleChangeW}
                                         value={weight}/>
-                                    <label className=" mr-2 font-semibold text-[#000000] text-xl ml-3 mt-4 flex">kg</label>
+                                    <label className=" mr-2 font-semibold text-[#000000] text-xl ml-3 mt-4 flex font-serif">kg</label>
                                 </div>
 
                                 <div className="flex ml-16">
                                     <div className="ml-6 ">
-                                        <button type="submit" className=" h-10 px-5 text-indigo-100 bg-indigo-700
-                                            rounded-lg transition-colors duration-150 focus:shadow-outline hover:bg-indigo-800">
+                                        <button type="submit" className=" h-10 px-5 text-indigo-100 bg-indigo-600
+                                            rounded-lg transition-colors duration-150 focus:shadow-outline hover:bg-indigo-700 font-serif hover:shadow-md">
                                             Submit
                                         </button>
                                     </div>

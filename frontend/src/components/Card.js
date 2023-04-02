@@ -26,26 +26,26 @@ const handleClick = () => {
                     <p className="my-2 leading-normal font-bold italic">
                         {props.spec}
                     </p>
-                    <p className="mb-2 leading-normal text-bold">
+                    <p className="mb-2 leading-normal text-bold font-serif">
                         Timings:
                     </p>
                     <div className="grid ml-2">
                         <span className='my-2'>
                             <input type="radio" name="fav_language" value="" />
-                            <label for="time1" className='mx-3'>9:00am-10:00am</label>
+                            <label for="time1" className='mx-3 font-serif'>9:00am-10:00am</label>
                         </span>
                         <span className='my-2'>
                             <input type="radio" name="fav_language" value="" />
-                            <label for="time2" className='mx-3'>10:00am-11:00am</label>
+                            <label for="time2" className='mx-3 font-serif'>10:00am-11:00am</label>
                         </span>
                         <span className='my-2'>
                             <input type="radio" name="fav_language" value="" />
-                            <label for="time3" className='mx-3'>5:00pm-6:00pm</label>
+                            <label for="time3" className='mx-3 font-serif'>5:00pm-6:00pm</label>
                         
                         </span>
                         <span className='my-2'>
                             <input type="radio" name="fav_language" value="" />
-                            <label for="time4" className='mx-3'>6:00pm-7:00pm</label>
+                            <label for="time4" className='mx-3 font-serif'>6:00pm-7:00pm</label>
                         </span>
                     </div>
 

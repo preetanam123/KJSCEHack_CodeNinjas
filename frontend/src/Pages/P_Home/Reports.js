@@ -108,7 +108,16 @@ export default function Reports() {
                 </div>
                  */}
                
-
+               <div className="flex justify-center mx-52 mt-40 px-16 py-16 text-[#090E40] w-3/4 h-5/6 rounded-xl
+                shadow-lg">
+                    <div className="ml-6  flex-col" >
+                        <div className="font-bold text-[#000000] text-2xl my-10 font-serif">
+                            <h1>FIND ALL YOUR REPORTS HERE </h1>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
                
             </div>
 

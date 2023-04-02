@@ -20,11 +20,11 @@ export default function Reports() {
                 <div className="flex w-full justify-between">
                     <div className="grid grid-cols-4 gap-4">
                     <div className="w-100 col-span-3">
-                        <div className="mx-2 mt-3 px-16 py-10 text-[#090E40] h-40 rounded-xl bg-indigo-500 bg-opacity-50">
+                        <div className="mx-2 mt-3 px-16 py-10 text-[#090E40] h-40 rounded-xl shadow-lg">
                             <div className="h-56">
                                 <div className="w-100">
-                                    <p className="font-bold text-4xl font-serif">Hello, Sheldon Cooper</p>
-                                    <p className="font-medium text-gray-600 pt-4">Have a nice day and don't forget to take care of your health!</p>
+                                    <span className="font-bold text-4xl font-serif ">Hello,</span> <span className="font-bold text-4xl font-serif text-[#f6f627]">Janvi Mehta</span> 
+                                    <p className="font-medium text-gray-600 pt-4 font-serif">Have a nice day and don't forget to take care of your health!</p>
                                 </div>                                                    
                             </div>
 
@@ -63,7 +63,7 @@ export default function Reports() {
                                                 <img src={profile} alt=""  />
                                             </div>
                                             <div className="">
-                                                <h2 className="text-xl font-bold text-center mt-4 font-serif text-indigo-50">Sheldon Cooper</h2>
+                                                <h2 className="text-xl font-bold text-center mt-4 font-serif text-indigo-50">Janvi Mehta</h2>
                                                 <p className="text-center font-serif text-indigo-200">21 years</p>
                                             </div>
                                             <div className="grid grid-cols-3 gap-2 my-7 mx-0">
@@ -71,13 +71,13 @@ export default function Reports() {
                                                     <div className="py-2 flex justify-center">
                                                         <img src={height} alt="" className=""/>
                                                     </div>
-                                                    Height <br />161cm
+                                                    Height <br />157.4 <br /> cm
                                                 </div>
                                                 <div className="p-0.5 rounded-md text-center bg-opacity-25 bg-slate-100 font-serif text-indigo-200">
                                                     <div className="py-2 flex justify-center">
                                                         <img src={weight} alt="" />
                                                     </div>
-                                                    Weight <br />54kg
+                                                    Weight <br />44 <br /> kg
                                                 </div>
                                                 <div className="p-0.5 rounded-md text-center bg-opacity-25 bg-slate-100 font-serif text-indigo-200">
                                                     <div className="py-2 flex justify-center">

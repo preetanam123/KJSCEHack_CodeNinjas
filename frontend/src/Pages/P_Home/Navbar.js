@@ -4,12 +4,12 @@ export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-[#B6FFCE] shadow">
+        <nav className="w-full bg-[#19376D]  shadow">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <a href="javascript:void(0)">
-                            <h2 className="text-3xl font-bold text-indigo-900">MediEAZE</h2>
+                            <h2 className="text-3xl font-bold text-[#ECF2FF] font-serif">MediEAZE</h2>
                         </a>
                         <div className="md:hidden">
                             <button
@@ -56,10 +56,10 @@ export default function NavBar() {
                         }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-indigo-800 hover:text-blue-600 font-medium text-xl">
+                            <li className="text-[#ECF2FF] hover:text-blue-200 font-medium text-xl font-serif">
                                 <a href="javascript:void(0)">Home</a>
                             </li>
-                            <li className="text-indigo-800 hover:text-blue-600 font-medium text-xl">
+                            <li className="text-[#ECF2FF] hover:text-blue-200 font-medium text-xl font-serif">
                                 <a href="/signup">Log Out</a>
                             </li>
                             
