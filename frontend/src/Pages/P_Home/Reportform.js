@@ -13,9 +13,9 @@ const SideBar = () => {
                         bg-white dark:bg-gray-900 shadow-lg mt-3">
            
                 <Divider />
-                <a href="./heartreport">
+                {/* <a href="./heartreport">
                     <SideBarIcon icon={<BsFillClipboard2HeartFill size="28" />} />
-                </a>
+                </a> */}
                 <Divider />
                 <a href="./bloodreport">
                     <SideBarIcon icon={<BsFillClipboard2PlusFill size="28" />} />
