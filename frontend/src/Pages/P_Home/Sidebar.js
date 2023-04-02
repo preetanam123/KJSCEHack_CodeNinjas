@@ -7,10 +7,10 @@ export default function Sidebar() {
     return (
         <div className="">
             <div className="flex">
-                <div className="flex flex-col h-screen mt-3 rounded-xl ml-2 p-3 bg-[#ffe6f3] shadow w-60">
+                <div className="flex flex-col h-screen mt-3 rounded-xl ml-2 p-3 bg-indigo-800 text-white shadow w-60">
                     <div className="space-y-3">
                         <div className="flex items-center">
-                            <h2 className="text-xl font-bold foot-serif">Dashboard</h2>
+                            <h2 className="text-xl font-bold font-serif">Dashboard</h2>
                         </div>
                         <div className="flex-1">
                             <ul className="pt-2 pb-4 space-y-1 text-sm">

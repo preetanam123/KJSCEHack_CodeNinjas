@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from "../../assets/logocolor.png";
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
@@ -9,7 +10,8 @@ export default function NavBar() {
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <a href="javascript:void(0)">
-                            <h2 className="text-3xl font-bold text-[#ECF2FF] font-serif">MediEAZE</h2>
+                            {/* <h2 className="text-3xl font-bold text-[#ECF2FF] font-serif">MediEAZE</h2> */}
+                            <img src={logo} alt="" srcset="" className="h-12 w-32"/>
                         </a>
                         <div className="md:hidden">
                             <button
