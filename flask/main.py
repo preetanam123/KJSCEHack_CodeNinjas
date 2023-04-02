@@ -48,12 +48,12 @@ def rec():
 def diabetes():
     jsonData = request.get_json()
     l=[]
-    l.append(jsonData['value1'])
-    l.append(jsonData['value2'])
-    l.append(jsonData['value3'])
-    l.append(jsonData['value4'])
-    l.append(jsonData['value5'])
-    l.append(jsonData['value6'])
+    l.append(jsonData['glucose'])
+    l.append(jsonData['bp'])
+    l.append(jsonData['st'])
+    l.append(jsonData['insulin'])
+    l.append(jsonData['bmi'])
+    l.append(jsonData['dpf'])
 
     arr = np.array(l, dtype = float)
     print(arr)
@@ -62,7 +62,7 @@ def diabetes():
     # arr3 = arr2.astype(np.float)
     print(arr2)
 
-    ans = diabetes.predict(arr2)
+    ans = diabetes.dib(arr2)
     print(ans)
     return ans
 @app.route('/heart', methods=['POST'])
@@ -103,7 +103,6 @@ def brain():
     arr2 = arr.reshape(1,-1).astype(np.float32)
     # arr3 = arr2.astype(np.float)
     print(arr2)
-
     ans = Brainstroke.predict(arr2)
     print(ans)
     return ans

@@ -12,7 +12,7 @@ export default function Diabetes() {
     const [bmi,setBmi] = useState(0);
     const [dpf,setDpf] = useState(0);
 
-    const url = 'http://localhost:8000/rec';
+    const url = 'http://localhost:8000/diabetes';
 
     const handleChangeG = (e) => {
         setGlucose(e.target.value);
@@ -52,7 +52,7 @@ export default function Diabetes() {
                 dpf
             });
             console.log(response.data);
-            alert("You may be suffering from "+response.data)
+            alert(response.data)
         } catch (error) {
             console.log(error.response);
             setGlucose("");
@@ -149,7 +149,15 @@ export default function Diabetes() {
                                         placeholder=""
                                         onChange={handleChangeD}
                                         value={dpf}/>
-                                </div>                           
+                                </div>     
+                                <div className="flex ml-16">
+                                    <div className="ml-6 ">
+                                        <button onClick = {handleSubmit} type="submit" className=" h-10 px-5 text-indigo-100 bg-indigo-700
+                                            rounded-lg transition-colors duration-150 focus:shadow-outline hover:bg-indigo-800">
+                                            Submit
+                                        </button>
+                                    </div>
+                            </div>                      
                             </form>
                 </div>
             </div>
