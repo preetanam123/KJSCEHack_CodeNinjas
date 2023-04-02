@@ -7,10 +7,10 @@ export default function Sidebar() {
     return (
         <div className="">
             <div className="flex">
-                <div className="flex flex-col h-screen p-3 bg-gradient-to-b from-[#FFACAC] to-[#FBFFB1] shadow w-60">
+                <div className="flex flex-col h-screen mt-3 rounded-xl ml-2 p-3 bg-[#FFA8A8] bg-opacity-50 shadow w-60">
                     <div className="space-y-3">
                         <div className="flex items-center">
-                            <h2 className="text-xl font-bold">Dashboard</h2>
+                            <h2 className="text-xl font-bold foot-serif">Dashboard</h2>
                         </div>
                         <div className="flex-1">
                             <ul className="pt-2 pb-4 space-y-1 text-sm">
@@ -24,7 +24,7 @@ export default function Sidebar() {
                                         <path d="M18 19.75H6C5.80189 19.7474 5.61263 19.6676 5.47253 19.5275C5.33244 19.3874 5.25259 19.1981 5.25 19V9.5C5.25 9.30109 5.32902 9.11032 5.46967 8.96967C5.61032 8.82902 5.80109 8.75 6 8.75C6.19891 8.75 6.38968 8.82902 6.53033 8.96967C6.67098 9.11032 6.75 9.30109 6.75 9.5V18.25H17.25V9.5C17.25 9.30109 17.329 9.11032 17.4697 8.96967C17.6103 8.82902 17.8011 8.75 18 8.75C18.1989 8.75 18.3897 8.82902 18.5303 8.96967C18.671 9.11032 18.75 9.30109 18.75 9.5V19C18.7474 19.1981 18.6676 19.3874 18.5275 19.5275C18.3874 19.6676 18.1981 19.7474 18 19.75Z" fill="#000000"/>
                                         <path d="M14 19.75C13.8019 19.7474 13.6126 19.6676 13.4725 19.5275C13.3324 19.3874 13.2526 19.1981 13.25 19V12.75H10.75V19C10.75 19.1989 10.671 19.3897 10.5303 19.5303C10.3897 19.671 10.1989 19.75 10 19.75C9.80109 19.75 9.61032 19.671 9.46967 19.5303C9.32902 19.3897 9.25 19.1989 9.25 19V12C9.25259 11.8019 9.33244 11.6126 9.47253 11.4725C9.61263 11.3324 9.80189 11.2526 10 11.25H14C14.1981 11.2526 14.3874 11.3324 14.5275 11.4725C14.6676 11.6126 14.7474 11.8019 14.75 12V19C14.7474 19.1981 14.6676 19.3874 14.5275 19.5275C14.3874 19.6676 14.1981 19.7474 14 19.75Z" fill="#000000"/>
                                         </svg>
-                                        <span className="text-lg">Personal Details</span>
+                                        <span className="text-lg font-serif">Personal Details</span>
                                     </a>
                                 </li>
                                 <li className="rounded-sm">
@@ -33,7 +33,7 @@ export default function Sidebar() {
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
                                         <svg width="24px" height="24px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M914.3 292.6H768V109.7H256v182.9H109.7v438.9H256v182.9h512v-183h146.3V292.6zM329.2 182.9h365.7v109.7H329.2V182.9z m365.7 658.2H329.2V548.6h365.7v292.5z m146.3-182.8H768V475.4H256v182.9h-73.1V365.7H841.2v292.6z" fill="#0F1F3C" /><path d="M402.3 621.7h219.4v73.1H402.3zM402.3 731.4h219.4v73.1H402.3z" fill="#0F1F3C" /></svg>
-                                        <span className="text-lg">Reports</span>
+                                        <span className="text-lg font-serif">Reports</span>
                                     </a>
                                 </li>
                                 {/* <li className="rounded-sm">
@@ -77,7 +77,7 @@ export default function Sidebar() {
                                             </g>
                                         </g>
                                         </svg>
-                                        <span className="text-lg">Laboratory</span>
+                                        <span className="text-lg font-serif">Laboratory</span>
                                     </a>
                                 </li>
                                 <li className="rounded-sm">
@@ -116,7 +116,7 @@ export default function Sidebar() {
                                             </g>
                                         </g>
                                         </svg>
-                                        <span className="text-lg">Appointment</span>
+                                        <span className="text-lg font-serif">Appointment</span>
                                     </a>
                                 </li>
                                 <li className="rounded-sm">
@@ -140,7 +140,7 @@ export default function Sidebar() {
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
                                         <svg fill="#000000" width="24px" height="24px" viewBox="-3.5 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M11.16 16.153a.477.477 0 0 1-.476.475H1.316a.477.477 0 0 1-.475-.475V3.046a.477.477 0 0 1 .475-.475h6.95l2.893 2.893zm-1.11-9.924H8.059a.575.575 0 0 1-.574-.574V3.679H1.95v11.84h8.102zM3.907 4.92a1.03 1.03 0 1 0 1.029 1.03 1.03 1.03 0 0 0-1.03-1.03zm4.958 3.253h-5.87v1.108h5.87zm0 2.354h-5.87v1.109h5.87zm0 2.354h-5.87v1.109h5.87z"/></svg>
-                                        <span className="text-lg">Precautions</span>
+                                        <span className="text-lg font-serif">Precautions</span>
                                     </a>
                                 </li>
                                 <li className="rounded-sm">

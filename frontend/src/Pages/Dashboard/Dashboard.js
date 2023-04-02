@@ -18,8 +18,8 @@ export default function Reports() {
                 <Sidebar />
 
                 <div className="flex w-full justify-between">
-                    <div className="grid grid-cols-3 gap-4">
-                    <div className="w-100 col-span-2">
+                    <div className="grid grid-cols-4 gap-4">
+                    <div className="w-100 col-span-3">
                         <div className="mx-2 mt-3 px-16 py-10 text-[#090E40] h-40 rounded-xl bg-indigo-500 bg-opacity-50">
                             <div className="h-56">
                                 <div className="w-100">
@@ -45,6 +45,7 @@ export default function Reports() {
 
                                 <Calendar />
                             </div>
+                            
                         </div>
 
                         {/* <div className="">

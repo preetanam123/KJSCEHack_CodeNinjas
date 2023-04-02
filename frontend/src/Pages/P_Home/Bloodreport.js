@@ -6,7 +6,7 @@ import m_r from "../../assets/medical_report.png";
 import axios from 'axios';
 // import { Document, Page } from 'react-pdf';
 // import pdf from '../../Book1.pdf'
-import Chat from "../../components/Chat";
+
 
 export default function Reports() {
     const [viewPdf, setViewPdf] = useState(false);
@@ -17,20 +17,7 @@ export default function Reports() {
         file = e.target.files[0];
     }
 
-
     const handleSubmit = async (e) =>{
-    //     e.preventDefault();
-    //     try {
-    //         // const file = e.target.files[0];
-    //         if (file != null) {
-    //             const data = new FormData();
-    //             data.append('file_from_react', file);
-    //             const response = await axios.post(`${url}`, data);
-    //             console.log(response);
-    //             setpdfData(response.data);
-    //     }
-
-    // const handleSubmit = async (e) =>{
         e.preventDefault();
         try {
             // const file = e.target.files[0];
@@ -40,7 +27,6 @@ export default function Reports() {
                 const response = await axios.post(`${url}`, data);
                 console.log(response);
                 setpdfData(response.data);
-                alert("Success")
         }
        
     }
@@ -51,10 +37,9 @@ export default function Reports() {
 }
 
 
-//     const handleView =() =>{
-//         setViewPdf(true);
-//     }
-
+    const handleView =() =>{
+        setViewPdf(true);
+    }
     return (
         <div>
                
@@ -62,10 +47,10 @@ export default function Reports() {
          
             <div className="flex">
                 <Reportform />
-                {/* <div className="flex justify-center mx-52 mt-40 px-16 py-16 text-[#090E40] w-3/4 h-5/6 rounded-xl
+                <div className="flex justify-center mx-52 mt-40 px-16 py-16 text-[#090E40] w-3/4 h-5/6 rounded-xl
                 bg-indigo-400">
-                    <div className=" ml-20  flex-col" >
-                        <div className="font-bold text-[#000000] text-2xl my-10 ">
+                    <div className="ml-14  flex-col" >
+                        <div className="font-bold text-[#000000] text-2xl my-10">
                             <h1>Please Upload your Blood Reports </h1>
                         </div>
                         <div className="font-medium text-[#000000] text-xl">
@@ -83,18 +68,8 @@ export default function Reports() {
                                 View Report
                             </button>
                             { 
-                                viewPdf ?<div className="text-xl">
-                                    <b>
-                                {pdfData[0]}</b>
-                                <br />
-                                <b>
-                                {pdfData[1]}</b>
-                                <br />
-                                <b>
-                                {pdfData[2]}</b>
-                                <br />
-                                <b>
-                                {pdfData[3]}</b>
+                                viewPdf ?<div>
+                                {pdfData}
                                 </div> : <div>
 
                                 </div> 
@@ -102,17 +77,15 @@ export default function Reports() {
                         </div>
                     
                     </div>
-                    <div className="w-96 h-full flex flex-justify-center mt-8">
+                    <div className="w-96 h-full flex justify-end mt-8">
                         <img src={m_r} alt="" srcset="" />
                     </div>
-                </div>
-                 */}
+                </div> 
                
-
                
             </div>
 
-            {/* <Chat/> */}
+            
         </div>
     );
 }
