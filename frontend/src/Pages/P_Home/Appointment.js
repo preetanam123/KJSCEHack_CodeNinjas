@@ -74,7 +74,7 @@ export default function Billing() {
                 </div>
 
             </div>
-            <Chat/>
+           
         </div>
     );
 }

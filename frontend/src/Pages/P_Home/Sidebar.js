@@ -144,6 +144,19 @@ export default function Sidebar() {
                                     </a>
                                 </li>
                                 <li className="rounded-sm">
+                                    </li>
+
+                                <li className="rounded-sm">
+                                    <a
+                                        href="/Video"
+                                        className="flex items-center p-2 space-x-3 rounded-md"
+                                    >
+                                        
+                                        <span className="text-lg">Video Call</span>
+                                    </a>
+                                </li>
+                                <li className="rounded-sm">
+
                                     
                                 </li>
                             </ul>
