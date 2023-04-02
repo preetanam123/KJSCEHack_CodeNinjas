@@ -5,10 +5,11 @@ pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tessera
 
 def report(filename):
     ans = pytesseract.image_to_string(Image.open(filename))
+    print(ans)
     l=[]
     for i in range(len(ans)):
         if(ans[i:i+22] == 'Resting Blood Pressure'):
-            print(ans[i:i+26])
+            print(ans[i:i+28])
             l.append(ans[i:i+25])
         if(ans[i:i+19] == 'Fasting Blood Sugar'):
             print(ans[i:i+20])
@@ -27,3 +28,5 @@ def report(filename):
             l.append(ans[i:i+12])
     print(l)
     return l
+
+report("heart456.png")
