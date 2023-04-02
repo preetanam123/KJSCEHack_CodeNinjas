@@ -15,8 +15,8 @@ import Labform from "./Pages/P_Home/Labform";
 import Diabetes from "./Pages/P_Home/Diabetes";
 import Heart from "./Pages/P_Home/Heart";
 import Brain from "./Pages/P_Home/Brain";
-
-
+import RoomPage from "./Pages/VideoCall/ROOM";
+import HomePage from "./Pages/VideoCall/Video";
 
 function App() {
   return (
@@ -43,6 +43,8 @@ function App() {
         <Route path="/brain" element = { <Brain />} />
         {/* <Route path="/calender" element = { <Calender />} /> */}
         <Route path="/dashboard" element = { <Dashboard />} />
+        <Route path="/Video" element = {<HomePage/>} />
+        <Route path ="/room/:roomId" element={<RoomPage/>} />
 
       </Routes>
     </Router>
