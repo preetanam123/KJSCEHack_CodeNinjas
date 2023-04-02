@@ -69,10 +69,13 @@ export default function BrainStroke() {
                 {/* <Sidebar /> */}
                 <Labform />
 
-                <div className="container mx-auto mt-12">
+                <div className="container mx-auto mt-12 font-serif">
                             <form className="grid grid-cols-1 gap-6 mb-6 mx-3" onSubmit={handleSubmit}>
+                                <div className="w-full px-2 bg-white rounded-lg shadow flex mr-5">
+                                    <label className=" mr-2 font-bold text-xl ml-20">BRAIN DETAILS</label>
+                                </div>
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex mr-5">
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Hypertension: </label>
+                                    <label className=" mr-2 font-bold text-xl ml-20 mt-4 flex font-serif">Hypertension: </label>
                                     <input
                                         type="number"
                                         name="glucose"
@@ -84,8 +87,8 @@ export default function BrainStroke() {
                                 </div>
 
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex mr-5">
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Heart<br />Disease</label>
-                                    <label className=" mr-2 font-bold text-[#000000] text-xl mt-6 flex">:</label>
+                                    <label className=" mr-2 font-bold text-xl ml-20 mt-4 flex font-serif">Heart<br />Disease</label>
+                                    <label className=" mr-2 font-bold text-xl mt-6 flex">:</label>
                                     <span className="flex gap-6 ml-14">
                                         <input type="radio" id="html" name="gender" value="1" onChange={handleChangeHd}/>
                                         <label for="heartdisease" className=" mr-2 font-semibold text-[#000000] text-xl mt-6 flex">Yes</label>

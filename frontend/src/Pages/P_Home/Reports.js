@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "./Navbar";
 import Reportform from "./Reportform";
 import { useState } from "react";
-import m_r from "../../assets/medical_report.png";
 import axios from 'axios';
 // import { Document, Page } from 'react-pdf';
 // import pdf from '../../Book1.pdf'

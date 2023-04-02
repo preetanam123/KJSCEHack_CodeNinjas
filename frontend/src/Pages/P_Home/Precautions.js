@@ -58,7 +58,7 @@ export default function Precautions() {
   return (
     <div>
       <NavBar />
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center font-serif">
         <div>
           <Sidebar />
         </div>

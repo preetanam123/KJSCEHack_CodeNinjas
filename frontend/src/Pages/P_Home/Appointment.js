@@ -17,7 +17,7 @@ export default function Billing() {
     return (
         <div>
             <Navbar />
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap font-serif">
                 <Sidebar />
                 <div>
 
@@ -64,8 +64,8 @@ export default function Billing() {
                         book={"Select time"}
                     />
                     <button
-                        className="bg-blue-200 text-black active:bg-blue-400 
-      font-bold px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none m-10"
+                        className="bg-blue-200 text-black active:bg-blue-400
+                            font-bold px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none m-10 font-serif"
                         type="button"
                         onClick={handleClick}
                     >

@@ -65,7 +65,7 @@ export default function Laborartory() {
                 {/* <Sidebar /> */}
                 <Labform />
 
-                <div className="container mx-auto mt-12">
+                <div className="container mx-auto mt-12 font-serif">
                         <form className="grid grid-cols-1 gap-6 mb-6 mx-3" onSubmit={handleSubmit}>
             
                             <div className="w-full px-2 py-2 bg-white rounded-lg shadow">

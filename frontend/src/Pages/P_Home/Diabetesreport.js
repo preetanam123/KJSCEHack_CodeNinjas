@@ -48,8 +48,8 @@ export default function Reports() {
             <div className="flex">
                 <Reportform />
                 <div className="flex justify-center mx-52 mt-40 px-16 py-16 text-[#090E40] w-3/4 h-5/6 rounded-xl
-                bg-indigo-400">
-                    <div className="ml-6  flex-col" >
+                bg-indigo-400 font-serif">
+                    <div className="ml-[-12px]  flex-col" >
                         <div className="font-bold text-[#000000] text-2xl my-10">
                             <h1>Please Upload your Diabetes Reports </h1>
                         </div>

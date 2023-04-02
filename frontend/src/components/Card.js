@@ -20,32 +20,32 @@ const handleClick = () => {
                     <h4 className="text-xl font-semibold tracking-tight text-blue-600">
                         {props.name}
                     </h4>
-                    <p className="my-2 leading-normal font-medium">
+                    <p className="my-2 leading-normal font-medium text-lg">
                         {props.desc}
                     </p>
                     <p className="my-2 leading-normal font-bold italic">
                         {props.spec}
                     </p>
-                    <p className="mb-2 leading-normal text-bold font-serif">
+                    <p className="mb-2 leading-normal text-bold font-serif text-lg">
                         Timings:
                     </p>
                     <div className="grid ml-2">
                         <span className='my-2'>
                             <input type="radio" name="fav_language" value="" />
-                            <label for="time1" className='mx-3 font-serif'>9:00am-10:00am</label>
+                            <label for="time1" className='mx-3 font-serif text-lg'>9:00am-10:00am</label>
                         </span>
                         <span className='my-2'>
                             <input type="radio" name="fav_language" value="" />
-                            <label for="time2" className='mx-3 font-serif'>10:00am-11:00am</label>
+                            <label for="time2" className='mx-3 font-serif text-lg'>10:00am-11:00am</label>
                         </span>
                         <span className='my-2'>
                             <input type="radio" name="fav_language" value="" />
-                            <label for="time3" className='mx-3 font-serif'>5:00pm-6:00pm</label>
+                            <label for="time3" className='mx-3 font-serif text-lg'>5:00pm-6:00pm</label>
                         
                         </span>
                         <span className='my-2'>
                             <input type="radio" name="fav_language" value="" />
-                            <label for="time4" className='mx-3 font-serif'>6:00pm-7:00pm</label>
+                            <label for="time4" className='mx-3 font-serif text-lg'>6:00pm-7:00pm</label>
                         </span>
                     </div>
 

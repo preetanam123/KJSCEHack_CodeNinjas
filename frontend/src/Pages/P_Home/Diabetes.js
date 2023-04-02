@@ -74,8 +74,11 @@ export default function Diabetes() {
                 {/* <Sidebar /> */}
                 <Labform />
 
-                <div className="container mx-auto mt-12">
+                <div className="container mx-auto mt-12 font-serif">
                             <form className="grid grid-cols-1 gap-6 mb-6 mx-3" onSubmit={handleSubmit}>
+                                <div className="w-full px-2 bg-white rounded-lg shadow flex mr-5">
+                                    <label className=" mr-2 font-bold text-xl ml-20">DIABETES DETAILS</label>
+                                </div>
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex mr-5">
                                     <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Glucose: </label>
                                     <input
