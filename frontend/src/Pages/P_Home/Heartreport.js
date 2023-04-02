@@ -11,7 +11,7 @@ import axios from 'axios';
 export default function Reports() {
     const [viewPdf, setViewPdf] = useState(false);
     const [pdfData, setpdfData] = useState(false);
-    const url = 'http://localhost:8000/upload';
+    const url = 'http://localhost:8000/hupload';
     let file;
     const sendPdf = (e) => {
         file = e.target.files[0];

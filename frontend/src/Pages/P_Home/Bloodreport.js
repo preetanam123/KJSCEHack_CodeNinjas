@@ -68,8 +68,16 @@ export default function Reports() {
                                 View Report
                             </button>
                             { 
-                                viewPdf ?<div>
-                                {pdfData}
+                                viewPdf ?<div className="text-xl">
+                                    <b>
+                                {pdfData[0]}
+                                <br />
+                                {pdfData[1]}
+                                <br />
+                                {pdfData[2]}
+                                <br />
+                                {pdfData[3]}
+                                </b>
                                 </div> : <div>
 
                                 </div> 

@@ -11,20 +11,31 @@ const SideBar = () => {
             <Sidebar />
             <div className="top-0 left-0 h-screen w-16 flex flex-col
                         bg-white dark:bg-gray-900 shadow-lg mt-3">
+<<<<<<< Updated upstream
                 {/* <a href="./Brainreport">
                     <SideBarIcon icon={<BsFillClipboard2PulseFill size="28" />} />
                 </a>             */}
+=======
+                <a href="./brainreport">
+                    <SideBarIcon icon={<BsFillClipboard2DataFill size="28" />} />
+                </a>            
+>>>>>>> Stashed changes
                 <Divider />
-                <a href="./Heartreport">
+                <a href="./heartreport">
                     <SideBarIcon icon={<BsFillClipboard2HeartFill size="28" />} />
                 </a>
                 <Divider />
-                <a href="./Bloodreport">
+                <a href="./bloodreport">
                     <SideBarIcon icon={<BsFillClipboard2PlusFill size="28" />} />
                 </a>
                 <Divider />
+<<<<<<< Updated upstream
                 <a href="./Diabetesreport">
                     <SideBarIcon icon={<BsFillClipboard2DataFill size="28" />} />
+=======
+                <a href="./diabetesreport">
+                    <SideBarIcon icon={<BsFillClipboard2PulseFill size="28" />} />
+>>>>>>> Stashed changes
                 </a>
                 <Divider />
             </div>

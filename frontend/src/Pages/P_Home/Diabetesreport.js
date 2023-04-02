@@ -11,7 +11,7 @@ import axios from 'axios';
 export default function Reports() {
     const [viewPdf, setViewPdf] = useState(false);
     const [pdfData, setpdfData] = useState(false);
-    const url = 'http://localhost:8000/upload';
+    const url = 'http://localhost:8000/dupload';
     let file;
     const sendPdf = (e) => {
         file = e.target.files[0];
@@ -49,9 +49,9 @@ export default function Reports() {
                 <Reportform />
                 <div className="flex justify-center mx-52 mt-40 px-16 py-16 text-[#090E40] w-3/4 h-5/6 rounded-xl
                 bg-indigo-400 font-serif">
-                    <div className="ml-[-12px]  flex-col" >
+                    <div className="ml-1[-12px]  flex-col" >
                         <div className="font-bold text-[#000000] text-2xl my-10">
-                            <h1>Please Upload your Diabetes Reports </h1>
+                            <h1> Please Upload your Diabetes Reports </h1>
                         </div>
                         <div className="font-medium text-[#000000] text-xl">
                             <input type="file" name="file" onChange={sendPdf}/>
