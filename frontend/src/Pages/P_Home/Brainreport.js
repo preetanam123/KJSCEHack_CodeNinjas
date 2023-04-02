@@ -9,38 +9,37 @@ import axios from 'axios';
 
 
 export default function Reports() {
-//     const [viewPdf, setViewPdf] = useState(false);
-//     const [pdfData, setpdfData] = useState(false);
-//     const url = 'http://localhost:8000/upload';
-//     let file;
-//     const sendPdf = (e) => {
-//         file = e.target.files[0];
-//     }
+    const [viewPdf, setViewPdf] = useState(false);
+    const [pdfData, setpdfData] = useState(false);
+    const url = 'http://localhost:8000/upload';
+    let file;
+    const sendPdf = (e) => {
+        file = e.target.files[0];
+    }
 
-//     const handleSubmit = async (e) =>{
-//         e.preventDefault();
-//         try {
-//             // const file = e.target.files[0];
-//             if (file != null) {
-//                 const data = new FormData();
-//                 data.append('file_from_react', file);
-//                 const response = await axios.post(`${url}`, data);
-//                 console.log(response);
-//                 setpdfData(response.data);
-//         }
+    const handleSubmit = async (e) =>{
+        e.preventDefault();
+        try {
+            // const file = e.target.files[0];
+            if (file != null) {
+                const data = new FormData();
+                data.append('file_from_react', file);
+                const response = await axios.post(`${url}`, data);
+                console.log(response);
+                setpdfData(response.data);
+        }
        
-//     }
-//     catch (e) {
-//         alert("Error uploading file")
-//         console.log(e);
-//     }
-// }
+    }
+    catch (e) {
+        alert("Error uploading file")
+        console.log(e);
+    }
+}
 
 
-//     const handleView =() =>{
-//         setViewPdf(true);
-//     }
-
+    const handleView =() =>{
+        setViewPdf(true);
+    }
     return (
         <div>
                
@@ -48,11 +47,11 @@ export default function Reports() {
          
             <div className="flex">
                 <Reportform />
-                {/* <div className="flex justify-center mx-52 mt-40 px-16 py-16 text-[#090E40] w-3/4 h-5/6 rounded-xl
+                <div className="flex justify-center mx-52 mt-40 px-16 py-16 text-[#090E40] w-3/4 h-5/6 rounded-xl
                 bg-indigo-400">
-                    <div className=" ml-20  flex-col" >
-                        <div className="font-bold text-[#000000] text-2xl my-10 ">
-                            <h1>Please Upload your Blood Reports </h1>
+                    <div className="ml-16  flex-col" >
+                        <div className="font-bold text-[#000000] text-2xl my-10">
+                            <h1>Please Upload your Brain Reports </h1>
                         </div>
                         <div className="font-medium text-[#000000] text-xl">
                             <input type="file" name="file" onChange={sendPdf}/>
@@ -78,13 +77,11 @@ export default function Reports() {
                         </div>
                     
                     </div>
-                    <div className="w-96 h-full flex flex-justify-center mt-8">
+                    <div className="w-96 h-full flex justify-end mt-8">
                         <img src={m_r} alt="" srcset="" />
                     </div>
-                </div>
-                 */}
+                </div> 
                
-
                
             </div>
 

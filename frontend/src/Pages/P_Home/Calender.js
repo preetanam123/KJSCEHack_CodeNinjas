@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { generateDate, months } from "../utils/calendar";
 import cn from "../utils/cn";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
+import calender from "../../assets/calender.svg"
 
 export default function Calendar() {
 	const days = ["S", "M", "T", "W", "T", "F", "S"];
@@ -10,8 +11,8 @@ export default function Calendar() {
 	const [today, setToday] = useState(currentDate);
 	const [selectDate, setSelectDate] = useState(currentDate);
 	return (
-		<div className="mt-[-200px] flex gap-10 justify-center sm:divide-x ml-10 sm:w-1/2 h-screen items-center sm:flex-row flex-col">
-			<div className="w-72 h-96 ">
+		<div className="font-serif mt-[-200px] flex gap-10 justify-between sm:divide-x ml-10 sm:w-1/2 h-screen items-center sm:flex-row flex-col">
+			<div className="w-80 h-96 ">
 				<div className="flex justify-between items-center">
 					<h1 className="select-none font-semibold">
 						{months[today.month()]}, {today.year()}
@@ -86,11 +87,26 @@ export default function Calendar() {
 					)}
 				</div>
 			</div>
-			<div className="h-96 w-96 sm:px-5">
-				<h1 className=" font-semibold">
+			<div className="h-96 w-72 sm:px-5">
+				{/* <h1 className=" font-semibold">
 					Schedule for {selectDate.toDate().toDateString()}
 				</h1>
-				<p className="text-gray-400">No meetings for today.</p>
+				<p className="text-gray-400">No meetings for today.</p> */}
+
+				<div className="container w-40">
+					<div className="">
+						<h1 className=" font-semibold text-lg font-serif">Upcoming Schedule</h1>
+					</div>
+					<div className="rounded bg-white w-20 h-8">
+						<div className="flex w-8 h-8 mt-5 rounded bg-slate-200 font-serif"> 
+							<img src={calender} alt="" />
+						</div>
+						<div className="font-serif">
+							<p className="text-slate-400 mt-2 ">Next Checkup</p> <br />
+							<p>Mon,03April</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

@@ -10,12 +10,18 @@ import Reports from "./Pages/P_Home/Reports";
 // import Chat from "./components/Chat";
 import Laboratory from "./Pages/P_Home/Laboratory";
 import Precautions from "./Pages/P_Home/Precautions";
+// import Calender from "./Pages/P_Home/Calender";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import Labform from "./Pages/P_Home/Labform";
 import Diabetes from "./Pages/P_Home/Diabetes";
 import Heart from "./Pages/P_Home/Heart";
 import Brain from "./Pages/P_Home/Brain";
-// import Calender from "./Pages/P_Home/Calender";
+import Reportform from "./Pages/P_Home/Reportform";
+import Bloodreport from "./Pages/P_Home/Bloodreport";
+import Diabetesreport from "./Pages/P_Home/Diabetesreport";
+import Heartreport from "./Pages/P_Home/Heartreport";
+import Brainreport from "./Pages/P_Home/Brainreport";
+
 
 
 function App() {
@@ -43,6 +49,11 @@ function App() {
         <Route path="/brain" element = { <Brain />} />
         {/* <Route path="/calender" element = { <Calender />} /> */}
         <Route path="/dashboard" element = { <Dashboard />} />
+        <Route path="/reportform" element = { <Reportform />} />
+        <Route path="/bloodreport" element = { <Bloodreport />} />
+        <Route path="/diabetesreport" element = { <Diabetesreport />} />
+        <Route path="/heartreport" element = { <Heartreport />} />
+        <Route path="/brainreport" element = { <Brainreport />} />
 
       </Routes>
     </Router>
