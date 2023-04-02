@@ -1,6 +1,6 @@
 // import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
-import { BsFillClipboard2HeartFill, BsFillClipboard2PlusFill, BsFillClipboard2PulseFill } from 'react-icons/bs';
+import { BsFillClipboard2HeartFill, BsFillClipboard2PlusFill, BsFillClipboard2DataFill } from 'react-icons/bs';
 
 
 const SideBar = () => {
@@ -24,7 +24,7 @@ const SideBar = () => {
 
 
                 <a href="./diabetesreport">
-                    <SideBarIcon icon={<BsFillClipboard2PulseFill size="28" />} />
+                    <SideBarIcon icon={<BsFillClipboard2DataFill size="28" />} />
 
                 </a>
                 <Divider />
