@@ -21,8 +21,8 @@ import Bloodreport from "./Pages/P_Home/Bloodreport";
 import Diabetesreport from "./Pages/P_Home/Heartreport";
 import Heartreport from "./Pages/P_Home/Heartreport";
 import Brainreport from "./Pages/P_Home/Brainreport";
-import RoomPage from "./Pages/Videocall/ROOM";
-import HomePage from "./Pages/Videocall/Video";
+import RoomPage from "./Pages/VideoCall/ROOM";
+import HomePage from "./Pages/VideoCall/Video";
 
 function App() {
   return (
