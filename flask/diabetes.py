@@ -41,7 +41,7 @@ print(training_data_accuracy)
 confusion_matrix = confusion_matrix(X_train_prediction,Y_train)
 print(confusion_matrix)
 
-def predict(input_data):
+def dib(input_data):
 
   input_data_as_numpy_array = np.asarray(input_data)
 

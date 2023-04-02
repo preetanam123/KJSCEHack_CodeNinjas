@@ -66,7 +66,7 @@ def predict(input_data):
     std_data = std.transform(input_data_reshaped)
 
     prediction = dt.predict(std_data)
-
+    print(prediction)
     if (prediction[0] == 0):
       
       
