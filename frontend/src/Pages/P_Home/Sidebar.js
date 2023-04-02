@@ -1,4 +1,5 @@
 import React from "react";
+import {AiFillPrinter} from 'react-icons/ai';
 // import { Radio } from "@material-tailwind/react";
 // import './Sidebar.css';
 
@@ -19,7 +20,7 @@ export default function Sidebar() {
                                         href="/personal"
                                         className="flex items-center p-2 space-x-1 rounded-md"
                                     >
-                                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg class="text-white" stroke="currentColor" fill="#ffffff" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20 11.75C19.8376 11.7507 19.6795 11.698 19.55 11.6L12 5.94L4.45 11.6C4.29087 11.7193 4.09085 11.7706 3.89394 11.7425C3.69702 11.7143 3.51935 11.6091 3.4 11.45C3.28066 11.2909 3.22941 11.0908 3.25754 10.8939C3.28567 10.697 3.39087 10.5193 3.55 10.4L11.55 4.4C11.6798 4.30263 11.8377 4.25 12 4.25C12.1623 4.25 12.3202 4.30263 12.45 4.4L20.45 10.4C20.5952 10.5179 20.6911 10.6859 20.7189 10.8709C20.7466 11.0559 20.7042 11.2446 20.6 11.4C20.5363 11.503 20.4482 11.5888 20.3436 11.6498C20.239 11.7108 20.121 11.7452 20 11.75Z" fill="#000000"/>
                                         <path d="M18 19.75H6C5.80189 19.7474 5.61263 19.6676 5.47253 19.5275C5.33244 19.3874 5.25259 19.1981 5.25 19V9.5C5.25 9.30109 5.32902 9.11032 5.46967 8.96967C5.61032 8.82902 5.80109 8.75 6 8.75C6.19891 8.75 6.38968 8.82902 6.53033 8.96967C6.67098 9.11032 6.75 9.30109 6.75 9.5V18.25H17.25V9.5C17.25 9.30109 17.329 9.11032 17.4697 8.96967C17.6103 8.82902 17.8011 8.75 18 8.75C18.1989 8.75 18.3897 8.82902 18.5303 8.96967C18.671 9.11032 18.75 9.30109 18.75 9.5V19C18.7474 19.1981 18.6676 19.3874 18.5275 19.5275C18.3874 19.6676 18.1981 19.7474 18 19.75Z" fill="#000000"/>
                                         <path d="M14 19.75C13.8019 19.7474 13.6126 19.6676 13.4725 19.5275C13.3324 19.3874 13.2526 19.1981 13.25 19V12.75H10.75V19C10.75 19.1989 10.671 19.3897 10.5303 19.5303C10.3897 19.671 10.1989 19.75 10 19.75C9.80109 19.75 9.61032 19.671 9.46967 19.5303C9.32902 19.3897 9.25 19.1989 9.25 19V12C9.25259 11.8019 9.33244 11.6126 9.47253 11.4725C9.61263 11.3324 9.80189 11.2526 10 11.25H14C14.1981 11.2526 14.3874 11.3324 14.5275 11.4725C14.6676 11.6126 14.7474 11.8019 14.75 12V19C14.7474 19.1981 14.6676 19.3874 14.5275 19.5275C14.3874 19.6676 14.1981 19.7474 14 19.75Z" fill="#000000"/>
@@ -32,7 +33,7 @@ export default function Sidebar() {
                                         href="/reports"
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
-                                        <svg width="24px" height="24px" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M914.3 292.6H768V109.7H256v182.9H109.7v438.9H256v182.9h512v-183h146.3V292.6zM329.2 182.9h365.7v109.7H329.2V182.9z m365.7 658.2H329.2V548.6h365.7v292.5z m146.3-182.8H768V475.4H256v182.9h-73.1V365.7H841.2v292.6z" fill="#0F1F3C" /><path d="M402.3 621.7h219.4v73.1H402.3zM402.3 731.4h219.4v73.1H402.3z" fill="#0F1F3C" /></svg>
+                                        <AiFillPrinter size="24" />
                                         <span className="text-lg font-serif">Reports</span>
                                     </a>
                                 </li>
@@ -56,7 +57,7 @@ export default function Sidebar() {
                                         href="labo"
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
-                                        <svg fill="#000000" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
+                                        <svg fill="#ffffff" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
                                             viewBox="0 0 512 512" xmlSpace="preserve">
                                         <g>
                                             <g>
@@ -88,7 +89,7 @@ export default function Sidebar() {
                                         href="appointment"
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
-                                        <svg fill="#000000" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
+                                        <svg fill="#ffffff" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
                                             viewBox="0 0 512 512" xmlSpace="preserve">
                                         <g>
                                             <g>
@@ -139,7 +140,7 @@ export default function Sidebar() {
                                         href="precautions"
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
-                                        <svg fill="#000000" width="24px" height="24px" viewBox="-3.5 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M11.16 16.153a.477.477 0 0 1-.476.475H1.316a.477.477 0 0 1-.475-.475V3.046a.477.477 0 0 1 .475-.475h6.95l2.893 2.893zm-1.11-9.924H8.059a.575.575 0 0 1-.574-.574V3.679H1.95v11.84h8.102zM3.907 4.92a1.03 1.03 0 1 0 1.029 1.03 1.03 1.03 0 0 0-1.03-1.03zm4.958 3.253h-5.87v1.108h5.87zm0 2.354h-5.87v1.109h5.87zm0 2.354h-5.87v1.109h5.87z"/></svg>
+                                        <svg fill="#ffffff" width="24px" height="24px" viewBox="-3.5 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg"><path d="M11.16 16.153a.477.477 0 0 1-.476.475H1.316a.477.477 0 0 1-.475-.475V3.046a.477.477 0 0 1 .475-.475h6.95l2.893 2.893zm-1.11-9.924H8.059a.575.575 0 0 1-.574-.574V3.679H1.95v11.84h8.102zM3.907 4.92a1.03 1.03 0 1 0 1.029 1.03 1.03 1.03 0 0 0-1.03-1.03zm4.958 3.253h-5.87v1.108h5.87zm0 2.354h-5.87v1.109h5.87zm0 2.354h-5.87v1.109h5.87z"/></svg>
                                         <span className="text-lg font-serif">Precautions</span>
                                     </a>
                                 </li>
@@ -151,7 +152,7 @@ export default function Sidebar() {
                                         href="/Video"
                                         className="flex items-center p-2 space-x-3 rounded-md"
                                     >
-                                        <svg fill="#000000" width="24px" height="24px" viewBox="0 0 64 64" version="1.1" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsSerif="http://www.serif.com/" xmlnsXlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <svg fill="#ffffff" width="24px" height="24px" viewBox="0 0 64 64" version="1.1" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsSerif="http://www.serif.com/" xmlnsXlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                                         <g id="SVGRepo_iconCarrier"> <g id="ICON"> 
                                         <path d="M29,12l0,3l-23,0c-0.796,0 -1.559,0.316 -2.121,0.879c-0.563,0.562 -0.879,1.325 -0.879,2.121c0,2.509 0,8.581 0,13.5c0,0.552 0.448,1 1,1c0.552,0 1,-0.448 1,-1l0,-13.5c-0,-0.265 0.105,
