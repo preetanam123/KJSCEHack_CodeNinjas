@@ -18,19 +18,25 @@ def report(filename):
     # print(ans)
     l=[]
     for i in range(len(ans)):
-        if(ans[i:i+11] == 'Haemoglobin'):
-            print(ans[i:i+17])
-            l.append(ans[i:i+17])
-        if(ans[i:i+3] == 'RBC'):
-            print(ans[i:i+8])
-            l.append(ans[i:i+8])
-        if(ans[i:i+8] == 'Platelet'):
-            print(ans[i:i+13])
-            l.append(ans[i:i+13])
-        if(ans[i:i+3] == 'LYM'):
+        if(ans[i:i+7] == 'Glucose'):
+            print(ans[i:i+10])
+            l.append(ans[i:i+10])
+        if(ans[i:i+14] == 'Blood Pressure'):
+            print(ans[i:i+16])
+            l.append(ans[i:i+16])
+        if(ans[i:i+14] == 'Skin Thickness'):
+            print(ans[i:i+16])
+            l.append(ans[i:i+16])
+        if(ans[i:i+7] == 'Insulin'):
             print(ans[i:i+9])
             l.append(ans[i:i+9])
+        if(ans[i:i+3] == 'BMI'):
+            print(ans[i:i+6])
+            l.append(ans[i:i+6])
+        if(ans[i:i+24] == "DiabetesPedigreeFucntion"):
+            print(ans[i:i+28])
+            l.append(ans[i:i+28])
     print(l)
     return l
 
-# report('Page_2.png')
+# report('diabetes2.png')
