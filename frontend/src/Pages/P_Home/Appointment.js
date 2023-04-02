@@ -7,7 +7,7 @@ import doc3 from "../../assets/doc3.png";
 import Card from "../../components/Card";
 
 // import Card from "../../components/Card";
-
+import Chat from "../../components/Chat";
 export default function Billing() {
     const [showModal, setShowModal] = useState(false);
     const handleClick = () =>{
@@ -74,6 +74,7 @@ export default function Billing() {
                 </div>
 
             </div>
+           
         </div>
     );
 }

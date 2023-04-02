@@ -7,6 +7,10 @@ import pickle
 import numpy as np
 from io import BytesIO
 import ocr4
+import heart_predict
+import diabetes
+import Brainstroke
+import diabetesocr
 
 lin_model = pickle.load(open('model1.pkl','rb'))
 log_model = pickle.load(open('model2.pkl','rb'))
@@ -36,18 +40,86 @@ def rec():
     # arr3 = arr2.astype(np.float)
     print(arr2)
 
-    
-
     ans = predict.classify(log_model.predict(arr2))
     print(log_model.predict(arr2))
     return ans
 
+@app.route('/diabetes', methods=['POST'])
+def diabetes():
+    jsonData = request.get_json()
+    l=[]
+    l.append(jsonData['value1'])
+    l.append(jsonData['value2'])
+    l.append(jsonData['value3'])
+    l.append(jsonData['value4'])
+    l.append(jsonData['value5'])
+    l.append(jsonData['value6'])
+
+    arr = np.array(l, dtype = float)
+    print(arr)
+
+    arr2 = arr.reshape(1,-1).astype(np.float32)
+    # arr3 = arr2.astype(np.float)
+    print(arr2)
+
+    ans = diabetes.predict(arr2)
+    print(ans)
+    return ans
+@app.route('/heart', methods=['POST'])
+def heart():
+    jsonData = request.get_json()
+    l=[]
+    l.append(jsonData['cp'])
+    l.append(jsonData['rbs'])
+    l.append(jsonData['cholestrol'])
+    l.append(jsonData['fbs'])
+    l.append(jsonData['ecg'])
+    l.append(jsonData['mhr'])
+    l.append(jsonData['thala'])
+
+    arr = np.array(l, dtype = float)
+    print(arr)
+
+    arr2 = arr.reshape(1,-1).astype(np.float32)
+    # arr3 = arr2.astype(np.float)
+    print(arr2)
+
+    ans = heart_predict.predict(arr2)
+    print(ans)
+    return ans
+    
+@app.route('/brain', methods=['POST'])
+def brain():
+    jsonData = request.get_json()
+    l=[]
+    l.append(jsonData['hypert'])
+    l.append(jsonData['hd'])
+    l.append(jsonData['agl'])
+    l.append(jsonData['bmi'])
+    l.append(jsonData['smoking'])
+    arr = np.array(l, dtype = float)
+    print(arr)
+
+    arr2 = arr.reshape(1,-1).astype(np.float32)
+    # arr3 = arr2.astype(np.float)
+    print(arr2)
+
+    ans = Brainstroke.predict(arr2)
+    print(ans)
+    return ans
 
 @app.route('/upload', methods=['POST'])
 def upload():
     file = request.files['file_from_react']
     filename = file.filename
     output = ocr4.report(filename)
+    return output
+
+@app.route('/dupload', methods=['POST'])
+def dupload():
+    file = request.files['file_from_react']
+    filename = file.filename
+    output = diabetesocr.report(filename)
     return output
 
 

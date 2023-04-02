@@ -6,35 +6,49 @@ import m_r from "../../assets/medical_report.png";
 import axios from 'axios';
 // import { Document, Page } from 'react-pdf';
 // import pdf from '../../Book1.pdf'
-
+import Chat from "../../components/Chat";
 
 export default function Reports() {
-//     const [viewPdf, setViewPdf] = useState(false);
-//     const [pdfData, setpdfData] = useState(false);
-//     const url = 'http://localhost:8000/upload';
-//     let file;
-//     const sendPdf = (e) => {
-//         file = e.target.files[0];
-//     }
+    const [viewPdf, setViewPdf] = useState(false);
+    const [pdfData, setpdfData] = useState(false);
+    const url = 'http://localhost:8000/upload';
+    let file;
+    const sendPdf = (e) => {
+        file = e.target.files[0];
+    }
 
-//     const handleSubmit = async (e) =>{
-//         e.preventDefault();
-//         try {
-//             // const file = e.target.files[0];
-//             if (file != null) {
-//                 const data = new FormData();
-//                 data.append('file_from_react', file);
-//                 const response = await axios.post(`${url}`, data);
-//                 console.log(response);
-//                 setpdfData(response.data);
-//         }
+
+    const handleSubmit = async (e) =>{
+        e.preventDefault();
+        try {
+            // const file = e.target.files[0];
+            if (file != null) {
+                const data = new FormData();
+                data.append('file_from_react', file);
+                const response = await axios.post(`${url}`, data);
+                console.log(response);
+                setpdfData(response.data);
+        }
+
+    const handleSubmit = async (e) =>{
+        e.preventDefault();
+        try {
+            // const file = e.target.files[0];
+            if (file != null) {
+                const data = new FormData();
+                data.append('file_from_react', file);
+                const response = await axios.post(`${url}`, data);
+                console.log(response);
+                setpdfData(response.data);
+                alert("Success")
+        }
        
-//     }
-//     catch (e) {
-//         alert("Error uploading file")
-//         console.log(e);
-//     }
-// }
+    }
+    catch (e) {
+        alert("Error uploading file")
+        console.log(e);
+    }
+}
 
 
 //     const handleView =() =>{
@@ -69,8 +83,18 @@ export default function Reports() {
                                 View Report
                             </button>
                             { 
-                                viewPdf ?<div>
-                                {pdfData}
+                                viewPdf ?<div className="text-xl">
+                                    <b>
+                                {pdfData[0]}</b>
+                                <br />
+                                <b>
+                                {pdfData[1]}</b>
+                                <br />
+                                <b>
+                                {pdfData[2]}</b>
+                                <br />
+                                <b>
+                                {pdfData[3]}</b>
                                 </div> : <div>
 
                                 </div> 
@@ -88,7 +112,7 @@ export default function Reports() {
                
             </div>
 
-            
+            {/* <Chat/> */}
         </div>
     );
 }

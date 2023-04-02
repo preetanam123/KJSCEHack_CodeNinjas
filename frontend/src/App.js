@@ -16,12 +16,7 @@ import Labform from "./Pages/P_Home/Labform";
 import Diabetes from "./Pages/P_Home/Diabetes";
 import Heart from "./Pages/P_Home/Heart";
 import Brain from "./Pages/P_Home/Brain";
-import Reportform from "./Pages/P_Home/Reportform";
-import Bloodreport from "./Pages/P_Home/Bloodreport";
-import Diabetesreport from "./Pages/P_Home/Diabetesreport";
-import Heartreport from "./Pages/P_Home/Heartreport";
-import Brainreport from "./Pages/P_Home/Brainreport";
-
+// import Calender from "./Pages/P_Home/Calender";
 
 
 function App() {
@@ -49,6 +44,8 @@ function App() {
         <Route path="/brain" element = { <Brain />} />
         {/* <Route path="/calender" element = { <Calender />} /> */}
         <Route path="/dashboard" element = { <Dashboard />} />
+        <Route path="/Video" element = {<HomePage/>} />
+        <Route path ="/room/:roomId" element={<RoomPage/>} />
         <Route path="/reportform" element = { <Reportform />} />
         <Route path="/bloodreport" element = { <Bloodreport />} />
         <Route path="/diabetesreport" element = { <Diabetesreport />} />
