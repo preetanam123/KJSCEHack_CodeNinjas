@@ -26,9 +26,9 @@ const SideBar = () => {
 
 
 
-                <a href="./diabetesreport">
+                {/* <a href="./heartreport">
                     <SideBarIcon icon={<BsFillClipboard2DataFill size="28" />} />
-                    </a>
+                    </a> */}
 
 
                 <a href="./diabetesreport">

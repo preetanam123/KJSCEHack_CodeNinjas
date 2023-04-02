@@ -5,6 +5,7 @@ import facebook from "../../assets/facebook.png"
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
+import logo from "../../assets/logocolor.png";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -57,7 +58,8 @@ const SignUp = () => {
 // bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
   return (
     <div className="w-full h-full bg-cover bg-gradient-to-r from-blue-500 to-green-400 min-h-[100%] min-w-screen">
-      <h1 className="text-5xl font-bold text-white px-16 pt-10 font-serif">MediEAZE</h1>
+      {/* <h1 className="text-5xl font-bold text-white px-16 pt-10 font-serif">MediEAZE</h1> */}
+      <img src={logo} alt="" srcset="" className="h-48 w-56 "/>
       <br />
       {/* <h6 className="text-xl font-semibold text-white px-16">
         SignUp with us and secure your documents by verifying

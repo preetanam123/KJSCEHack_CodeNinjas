@@ -5,6 +5,7 @@ import facebook from "../../assets/facebook.png"
 import axios from "axios";
 import { useNavigate} from "react-router-dom";
 import { useState } from "react";
+import logo from "../../assets/logocolor.png";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -45,7 +46,8 @@ const Login = () => {
   return (
     <>
       <div className="w-full h-fit bg-cover bg-gradient-to-r from-green-400 to-blue-500 min-h-screen min-w-screen">
-        <h1 className="text-5xl font-bold text-white px-16 pt-10 font-serif">MediEAZE</h1>
+        {/* <h1 className="text-5xl font-bold text-white px-16 pt-10 font-serif">MediEAZE</h1> */}
+        <img src={logo} alt="" srcset="" className="h-48 w-56 "/>
         <br />
         {/* <h6 className="text-xl font-semibold text-white px-16">A platform to Verify your documents and safeguard them</h6> */}
         <div className="px-16 py-16 bg-white mx-40 mt-6 mb-6 h-[100%] rounded-2xl flex justify-center" >
