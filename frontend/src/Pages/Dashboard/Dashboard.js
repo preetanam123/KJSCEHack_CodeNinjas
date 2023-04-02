@@ -66,7 +66,7 @@ export default function Reports() {
                                                 <h2 className="text-xl font-bold text-center mt-4 font-serif text-indigo-50">Janvi Mehta</h2>
                                                 <p className="text-center font-serif text-indigo-200">21 years</p>
                                             </div>
-                                            <div className="grid grid-cols-3 gap-2 my-7 mx-0">
+                                            <div className="grid grid-cols-2 gap-2 my-7 mx-0">
                                                 <div className=" p-0.5 rounded-md text-center bg-opacity-25 bg-slate-100 font-serif text-indigo-200">
                                                     <div className="py-2 flex justify-center">
                                                         <img src={height} alt="" className=""/>
@@ -84,6 +84,12 @@ export default function Reports() {
                                                         <img src={blood} alt="" />
                                                     </div>
                                                     Blood Group <br />A+
+                                                </div>
+                                                <div className="p-0.5 rounded-md text-center bg-opacity-25 bg-slate-100 font-serif text-indigo-200">
+                                                    <div className="py-2 flex justify-center">
+                                                        <img src={weight} alt="" />
+                                                    </div>
+                                                    Body Mass Index <br /> 17.8 
                                                 </div>
                                             </div>
                                         </div>
