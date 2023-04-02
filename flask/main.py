@@ -10,6 +10,7 @@ import ocr4
 import heart_predict
 import diabetes
 import Brainstroke
+import diabetesocr
 
 lin_model = pickle.load(open('model1.pkl','rb'))
 log_model = pickle.load(open('model2.pkl','rb'))
@@ -45,7 +46,7 @@ def rec():
 
 @app.route('/diabetes', methods=['POST'])
 def diabetes():
-    jsonData = json.get_json()
+    jsonData = request.get_json()
     l=[]
     l.append(jsonData['value1'])
     l.append(jsonData['value2'])
@@ -66,14 +67,15 @@ def diabetes():
     return ans
 @app.route('/heart', methods=['POST'])
 def heart():
-    jsonData = json.get_json()
+    jsonData = request.get_json()
     l=[]
-    l.append(jsonData['value1'])
-    l.append(jsonData['value2'])
-    l.append(jsonData['value3'])
-    l.append(jsonData['value4'])
-    l.append(jsonData['value5'])
-    l.append(jsonData['value6'])
+    l.append(jsonData['cp'])
+    l.append(jsonData['rbs'])
+    l.append(jsonData['cholestrol'])
+    l.append(jsonData['fbs'])
+    l.append(jsonData['ecg'])
+    l.append(jsonData['mhr'])
+    l.append(jsonData['thala'])
 
     arr = np.array(l, dtype = float)
     print(arr)
@@ -88,9 +90,9 @@ def heart():
     
 @app.route('/brain', methods=['POST'])
 def brain():
-    jsonData = json.get_json()
+    jsonData = request.get_json()
     l=[]
-    l.append(jsonData['value1'])
+    l.append(jsonData['hypert'])
     l.append(jsonData['value2'])
     l.append(jsonData['value3'])
     l.append(jsonData['value4'])
@@ -113,6 +115,13 @@ def upload():
     file = request.files['file_from_react']
     filename = file.filename
     output = ocr4.report(filename)
+    return output
+
+@app.route('/dupload', methods=['POST'])
+def dupload():
+    file = request.files['file_from_react']
+    filename = file.filename
+    output = diabetesocr.report(filename)
     return output
 
 

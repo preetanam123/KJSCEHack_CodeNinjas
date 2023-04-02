@@ -130,7 +130,7 @@ export default function Laborartory() {
                                             Submit
                                         </button>
                                     </div>
-                                </div>
+                            </div>
 
                         </form>
                 </div>

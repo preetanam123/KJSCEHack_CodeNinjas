@@ -11,8 +11,9 @@ export default function HeartDisease() {
     const [ecg,setEcg] = useState(0);
     const [mhr,setMhr] = useState(0);
     const [thala,setThala] = useState(0);
+    const [cp,setCp] = useState(0);
 
-    const url = 'http://localhost:8000/rec';
+    const url = 'http://localhost:8000/heart';
 
     const handleChangeR = (e) => {
         setRbs(e.target.value);
@@ -32,7 +33,10 @@ export default function HeartDisease() {
     const handleChangeT = (e) => {
         setThala(e.target.value);
     }
-
+    const handleChangeChest =(e) =>{
+        setCp(e.target.value);
+    }
+    console.log(cp);
     console.log(rbs);
     console.log(fbs);
     console.log(cholestrol);
@@ -44,6 +48,7 @@ export default function HeartDisease() {
         e.preventDefault(); 
         try {
             const response = await axios.post(`${url}`, {
+                cp,
                 rbs,
                 fbs,
                 cholestrol,
@@ -52,9 +57,10 @@ export default function HeartDisease() {
                 thala
             });
             console.log(response.data);
-            alert("You may be suffering from "+response.data)
+            alert(response.data)
         } catch (error) {
             console.log(error.response);
+            setCp("");
             setRbs("");
             setFbs("");
             setC("");
@@ -76,6 +82,18 @@ export default function HeartDisease() {
 
                 <div className="container mx-auto mt-12">
                             <form className="grid grid-cols-1 gap-6 mb-6 mx-3" onSubmit={handleSubmit}>
+                            <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex mr-5">
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Chest <br /> Pain</label>
+                                    <label className=" mr-2 font-bold text-[#000000] text-xl mt-12 flex">:</label>
+                                    <input
+                                        type="number"
+                                        name="cp"
+                                        className="w-full block px-16 py-2 mt-2 ml-10 border-gray-500 border-2 rounded-md shadow-sm focus:border-indigo-300 focus:ring
+                                    focus:ring-indigo-200 focus:ring-opacity-50 text-gray-700"
+                                        placeholder=""
+                                        onChange={handleChangeChest}
+                                        value={cp}/>
+                                </div>
                                 <div className="w-full px-2 py-2 bg-white rounded-lg shadow flex mr-5">
                                     <label className=" mr-2 font-bold text-[#000000] text-xl ml-20 mt-4 flex font-serif">Resting<br/>Blood<br/>Sugar</label>
                                     <label className=" mr-2 font-bold text-[#000000] text-xl mt-12 flex">:</label>
@@ -150,7 +168,16 @@ export default function HeartDisease() {
                                         placeholder=""
                                         onChange={handleChangeT}
                                         value={thala}/>
-                                </div>                           
+                                </div>    
+                                <div className="flex ml-16">
+                                    <div className="ml-6 ">
+                                        <button type="submit" className=" h-10 px-5 text-indigo-100 bg-indigo-700
+                                            rounded-lg transition-colors duration-150 focus:shadow-outline hover:bg-indigo-800"
+                                            onClick={handleSubmit}>
+                                            Submit
+                                        </button>
+                                    </div>
+                            </div>                       
                             </form>
                 </div>
             </div>
