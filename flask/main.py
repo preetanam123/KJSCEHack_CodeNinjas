@@ -8,9 +8,10 @@ import numpy as np
 from io import BytesIO
 import ocr4
 import heart_predict
-import diabetes
+import diabetes_predict
 import Brainstroke
 import diabetesocr
+import heartocr
 
 lin_model = pickle.load(open('model1.pkl','rb'))
 log_model = pickle.load(open('model2.pkl','rb'))
@@ -62,7 +63,7 @@ def diabetes():
     # arr3 = arr2.astype(np.float)
     print(arr2)
 
-    ans = diabetes.dib(arr2)
+    ans = diabetes_predict.dib(arr2)
     print(ans)
     return ans
 @app.route('/heart', methods=['POST'])
@@ -119,6 +120,13 @@ def dupload():
     file = request.files['file_from_react']
     filename = file.filename
     output = diabetesocr.report(filename)
+    return output
+
+@app.route('/hupload', methods=['POST'])
+def hupload():
+    file = request.files['file_from_react']
+    filename = file.filename
+    output = heartocr.report(filename)
     return output
 
 

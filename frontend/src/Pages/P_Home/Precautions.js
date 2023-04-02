@@ -15,8 +15,7 @@ export default function Precautions() {
   const handleClick = (e) => {
     if (disease === "Dengue") {
       setDescription(
-        "an acute infectious disease caused by a flavivirus (species Dengue virus of the genus Flavivirus), transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. — called also breakbone fever, dengue fever."
-      );
+        "an acute infectious disease caused by a flavivirus (species Dengue virus of the genus Flavivirus), transmitted by aedes mosquitoes, and characterized by headache, severe joint pain, and a rash. — called also breakbone fever, dengue fever.");
       setPrecaution("drink papaya leaf juice, avoid fatty spicy food, keep mosquitos away, keep hydrated");
       setMedicine("No specific antiviral agents exist for dengue. Supportive care is advised: Patients should be advised to stay well hydrated and to avoid aspirin (acetylsalicylic acid), aspirin-containing drugs, and other nonsteroidal anti-inflammatory drugs (such as ibuprofen) because of their anticoagulant properties.")
     } else if (disease === "Typhoid") {
@@ -28,7 +27,6 @@ export default function Precautions() {
 
     } else if (disease === "Anemia") {
       setDescription(
-
         "Anemia is a condition in which you lack enough healthy red blood cells to carry adequate oxygen to your body's tissues. Having anemia, also referred to as low hemoglobin, can make you feel tired and weak. There are many forms of anemia, each with its own cause."
       );
       setPrecaution("Eat iron-rich foods which also contain Vitamin C in them, Avoiding exposure to certain chemicals, Taking good care of your teeth and going to the dentist regularly, Getting regular exercise");
@@ -48,10 +46,6 @@ export default function Precautions() {
       setDescription("There are two main causes of stroke: a blocked artery (ischemic stroke) or leaking or bursting of a blood vessel (hemorrhagic stroke). Some people may have only a temporary disruption of blood flow to the brain, known as a transient ischemic attack (TIA), that doesn't cause lasting symptoms.")
       setPrecaution("Watch the amount of saturated fat, fried foods, and sugar you eat. Your doctor may suggest gentle exercise, too. Ask what might be safe for you.");
       setMedicine("An IV injection of recombinant tissue plasminogen activator (TPA) — also called alteplase (Activase) or tenecteplase (TNKase) — is the gold standard treatment for ischemic stroke. An injection of TPA is usually given through a vein in the arm within the first three hours.")
-    }
-    else{
-        setPrecaution("");
-        setDescription("");
     }
   };
   
@@ -86,6 +80,11 @@ export default function Precautions() {
               Precautions:
               <br />
               {precaution}
+            </div>
+            <div className="m-10 font-bold text-[#000000] text-xl">
+              Medicines:
+              <br />
+              {medicine}
             </div>
           </div>
         </div>
