@@ -16,8 +16,13 @@ import Labform from "./Pages/P_Home/Labform";
 import Diabetes from "./Pages/P_Home/Diabetes";
 import Heart from "./Pages/P_Home/Heart";
 import Brain from "./Pages/P_Home/Brain";
-// import Calender from "./Pages/P_Home/Calender";
-
+import Reportform from "./Pages/P_Home/Reportform";
+import Bloodreport from "./Pages/P_Home/Bloodreport";
+import Diabetesreport from "./Pages/P_Home/Heartreport";
+import Heartreport from "./Pages/P_Home/Heartreport";
+import Brainreport from "./Pages/P_Home/Brainreport";
+import RoomPage from "./Pages/Videocall/ROOM";
+import HomePage from "./Pages/Videocall/Video";
 
 function App() {
   return (

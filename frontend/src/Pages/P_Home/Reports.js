@@ -19,18 +19,18 @@ export default function Reports() {
 
 
     const handleSubmit = async (e) =>{
-        e.preventDefault();
-        try {
-            // const file = e.target.files[0];
-            if (file != null) {
-                const data = new FormData();
-                data.append('file_from_react', file);
-                const response = await axios.post(`${url}`, data);
-                console.log(response);
-                setpdfData(response.data);
-        }
+    //     e.preventDefault();
+    //     try {
+    //         // const file = e.target.files[0];
+    //         if (file != null) {
+    //             const data = new FormData();
+    //             data.append('file_from_react', file);
+    //             const response = await axios.post(`${url}`, data);
+    //             console.log(response);
+    //             setpdfData(response.data);
+    //     }
 
-    const handleSubmit = async (e) =>{
+    // const handleSubmit = async (e) =>{
         e.preventDefault();
         try {
             // const file = e.target.files[0];
